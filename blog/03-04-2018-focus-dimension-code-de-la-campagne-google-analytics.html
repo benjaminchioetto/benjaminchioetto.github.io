@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Une fonctionnalité peu connue mais extrêmement utile">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Focus sur la dimension "Code de la campagne" de Google Analytics - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Focus sur la dimension "Code de la campagne" de Google Analytics</h1>
+                        <h2 class="subheading">Une fonctionnalité peu connue mais extrêmement utile</h2>
+                        <span class="meta">03 avril 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">L'utilisation simultanée de plusieurs outils de suivi des campagnes peut s'avérer problématique, car le nombre de dimensions disponibles nativement pour stocker les informations se rapportant à une source de trafic donnée varie fortement d'une solution à l'autre. En outre, s'assurer que les différents paramètres d'URLs utiles au suivi des campagnes soient bien valorisés peut s'avérer extrêmement chronophage..</blockquote>
+
+                    <h2 class="section-heading">Rappels concernant les méthodes de suivi des campagnes par Google Analytics sur les sites Web</h2>
+
+                    <p>La détection d'une source de trafic par la bibliothèque JavaScript de Google Analytics repose sur l'analyse de la variable JavaScript document.referrer, qui stocke l'url de la page ayant précédé celle où le code Google Analytics s'est exécuté. Il devient ainsi possible de détecter des visites en provenance de sites tiers.</p>
+                    <p>Des noms de domaines peuvent être spécifiés au sein de l'interface de Google Analytics, afin d'indiquer qu'il s'agit de moteurs de recherche ou de réseaux sociaux, dans le but de compléter la base de données par défaut de Google Analytics. Pour les autres canaux d'acquisition, la détection de la source de trafic repose sur l'inclusion de paramètres GET au sein de la page de destination. Un <a href="https://ga-dev-tools.appspot.com/campaign-url-builder/">outil dédié</a> existe afin d'utiliser les cinq paramètres GET proposés de façon standard par Google. Alternativement, un recours au SDK JavaScript est envisageable afin de <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName">définir manuellement</a> les dimensions décrivant la source de trafic d'une session.</p>
+
+                    <h2 class="section-heading">Limites de l'approche reposant sur les cinq paramètres natifs</h2>
+
+                    <p>Bien qu'il s'avère possible de stocker la valeur de n'importe quel paramètre GET, tel que camp_aff par exemple, au sein d'une dimension personnalisée via la méthode du SDK décrite ci-dessus, les utilisateurs de la solution Google Analytics préfèrent la plupart du temps se limiter à un recours aux cinq paramètres GET natifs : utm_medium, utm_source, utm_campaign, utm_content et utm_term, car les données qui sont déversées dans les dimensions associées sont exploitées au sein des rapports natifs disponibles au sein de l'interface, contrairement à celles injectées dans des dimensions personnalisées.</p>
+
+                    <p>Par ailleurs, une inflation du volume de dimensions dédiées au stockage des données de trafic peut s'avérer problématique, car elle démultiplie les coûts induits par leur recettage et les risques d'erreurs lors du paramètrage des urls de suivi des campagnes.</p>
+                    <p>L'utilisation de dimensions personnalisées ne constitue donc pas une solution en soi, tandis que Google Analytics ne semble pas prévoir de dimension dédiée au stockage de l'identifiant de la campagne à l'origine de la session, alors même qu'il s'agit de l'information de base permettant un suivi multi-outils. En apparence, les utilisateurs semblent donc condamnés à stocker cette information dans une dimension personnalisée ou à la concaténer avec le libellé de la campagne. En réalité, il existe une approche standard et documentée afin de répondre à ce besoin.</p>
+
+                    <h2 class="section-heading">La dimension "Code de la campagne", le Graal de l'analyse de trafic</h2>
+
+                    <p>Bien qu'il ne soit pas mis en avant sur l'outil de création des urls de campagne officiel, Google Analytics accepte l'usage d'un sixième paramètre GET : utm_id. Son contenu est accessible via la dimension "Code de la campagne". Nativement conçu pour permettre le stockage d'identifiants, les valeurs qui y sont stockées peuvent servir de clé afin <a href="https://support.google.com/analytics/answer/4522476?hl=en">d'importer</a> dans Google Analytics des informations relatives au support et à la source d'une session.</p>
+
+                    <p>Le paramètre utm_id permet donc non seulement de stocker une information supplémentaire sans effectuer de paramétrages personnalisés, mais aussi de limiter le nombre de paramètres GET inclus dans les urls des pages de destination, limitant par là-même les chances de commettre des erreurs et concourant ainsi à améliorer la qualité des données collectées. Comme la plupart des dimensions de Google Analytics, celle-ci peut être peuplée manuellement via la <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignId">commande</a> JavaScript appropriée.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+
+                    <p>Difficile de choisir de ne pas peupler la dimension "Code de la campagne" une fois son existence dévoilée. D'un usage simplissime et extrêmement polyvalent, cet emplacement de stockage de Google Analytics a tout pour plaire. Dommage que son utilisation ne soit pas davantage mise en avant par les équipes de Google.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
