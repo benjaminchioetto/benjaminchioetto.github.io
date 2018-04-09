@@ -20,10 +20,10 @@ all copies or substantial portions of the Software.
     <meta name="robots" content="index, follow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Une fonctionnalité peu connue mais extrêmement utile">
+    <meta name="description" content="Apprendre à sélectionner la meilleure approche en fonction de ses besoins">
     <meta name="author" content="Benjamin CHIOETTO">
 
-    <title>Focus sur la dimension "Code de la campagne" de Google Analytics - Benjamin CHIOETTO</title>
+    <title>Modèle ou balise personnalisée, quelle solution choisir pour ses balises ? - Benjamin CHIOETTO</title>
 
     <!-- Icon link -->
     <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
@@ -109,9 +109,9 @@ all copies or substantial portions of the Software.
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h1>Focus sur la dimension "Code de la campagne" de Google Analytics</h1>
-                        <h2 class="subheading">Une fonctionnalité peu connue mais extrêmement utile</h2>
-                        <span class="meta">03 avril 2018</span>
+                        <h1>Modèle ou balise personnalisée, quelle solution choisir pour ses balises ?</h1>
+                        <h2 class="subheading">Apprendre à sélectionner la meilleure approche en fonction de ses besoins</h2>
+                        <span class="meta">10 avril 2018</span>
                     </div>
                 </div>
             </div>
@@ -123,29 +123,30 @@ all copies or substantial portions of the Software.
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <blockquote class="blockquote">L'utilisation simultanée de plusieurs outils de suivi des campagnes peut s'avérer problématique, car le nombre de dimensions disponibles nativement pour stocker les informations se rapportant à une source de trafic donnée varie fortement d'une solution à l'autre. En outre, s'assurer que les différents paramètres d'URLs utiles au suivi des campagnes soient bien valorisés peut s'avérer extrêmement chronophage.</blockquote>
+                    <blockquote class="blockquote">Recourir à un outil de gestion des balises permet de raccourcir les cycles liés aux déploiement de solutions marketing. Néanmoins, comme toute solution technique, elle offre différentes possibilités à l'utilisateur afin de lui permettre de parvenir à ses fins : à savoir déployer ses balises. Pour ce faire, doit-il recourir à l'un des modèles disponibles au sein de son outil de gestion des balises ou au contraire opter pour une implémentation reposant sur un modèle personnalisé ?</blockquote>
 
-                    <h2 class="section-heading">Rappels concernant les méthodes de suivi des campagnes par Google Analytics sur les sites Web</h2>
+                    <h2 class="section-heading">Modèles de balises : le point sur la question</h2>
 
-                    <p>La détection d'une source de trafic par la bibliothèque JavaScript de Google Analytics repose sur l'analyse de la variable JavaScript document.referrer, qui stocke l'url de la page ayant précédé celle où le code Google Analytics s'est exécuté. Il devient ainsi possible de détecter des visites en provenance de sites tiers.</p>
-                    <p>Des noms de domaines peuvent être spécifiés au sein de l'interface de Google Analytics, afin d'indiquer qu'il s'agit de moteurs de recherche ou de réseaux sociaux, dans le but de compléter la base de données par défaut de Google Analytics. Pour les autres canaux d'acquisition, la détection de la source de trafic repose sur l'inclusion de paramètres GET au sein de la page de destination. Un <a href="https://ga-dev-tools.appspot.com/campaign-url-builder/">outil dédié</a> existe afin d'utiliser les cinq paramètres GET proposés de façon standard par Google. Alternativement, un recours au SDK JavaScript est envisageable afin de <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignName">définir manuellement</a> les dimensions décrivant la source de trafic d'une session.</p>
+                    <p>Un outil de gestion des balises est en capacité de déployer des codes en utilisant un langage de programmation qui pourra être amené à varier en fonction du contexte de déploiement de l'outil : site Web ou application. Afin de mettre en ligne des éléments, le gestionnaire de balises doit tout d'abord les encapsuler dans une instance baptisée balise ou tag en anglais.</p>
+                    <p>L'éditeur logiciel gérant l'outil de gestion des balises propose deux approches afin d'inclure des codes au sein du conteneur chargé de gérer leur déploiement : utiliser une balise personnalisée ou alternativement le modèle de balise approprié en fonction du partenaire dont il souhaite déployer les codes.</p>
 
-                    <h2 class="section-heading">Limites de l'approche reposant sur les cinq paramètres natifs</h2>
+                    <h2 class="section-heading">La balise personnalisée : la liberté incarnée</h2>
 
-                    <p>Bien qu'il s'avère possible de stocker la valeur de n'importe quel paramètre GET, tel que camp_aff par exemple, au sein d'une dimension personnalisée via la méthode du SDK décrite ci-dessus, les utilisateurs de la solution Google Analytics préfèrent la plupart du temps se limiter à un recours aux cinq paramètres GET natifs : utm_medium, utm_source, utm_campaign, utm_content et utm_term, car les données qui sont déversées dans les dimensions associées sont exploitées au sein des rapports natifs disponibles au sein de l'interface, contrairement à celles injectées dans des dimensions personnalisées.</p>
+                    <p>La balise personnalisée à ceci d'intéressant que les seules restrictions imposées à l'utilisateur en son sein concernent les capacités techniques proprement dites de l'outil de gestion des balises. Du moment que les codes qu'elle embarque sont rédigés dans le même langage que celui du conteneur, ils peuvent être déployés sans problème par l'outil de gestion des balises.</p>
 
-                    <p>Par ailleurs, une inflation du volume de dimensions dédiées au stockage des données de trafic peut s'avérer problématique, car elle démultiplie les coûts induits par leur recettage et les risques d'erreurs lors du paramètrage des urls de suivi des campagnes.</p>
-                    <p>L'utilisation de dimensions personnalisées ne constitue donc pas une solution en soi, tandis que Google Analytics ne semble pas prévoir de dimension dédiée au stockage de l'identifiant de la campagne à l'origine de la session, alors même qu'il s'agit de l'information de base permettant un suivi multi-outils. En apparence, les utilisateurs semblent donc condamnés à stocker cette information dans une dimension personnalisée ou à la concaténer avec le libellé de la campagne. En réalité, il existe une approche standard et documentée afin de répondre à ce besoin.</p>
+                    <p>Assez logiquement, la balise personnalisée a les faveurs des développeurs et utilisateurs au profil dit "technique", qui voient dans son utilisation le moyen le plus rapide et adapté de parvenir à leurs fins. Dans une configuration où la personne en charge du paramétrage se contente de copier-coller des codes, les a elle-même rédigés, ou encore connaît parfaitement le mode de fonctionnement de la solution à laquelle ils appartiennent, difficile de lui trouver en apparence une alternative plus efficace.</p>
 
-                    <h2 class="section-heading">La dimension "Code de la campagne", le Graal de l'analyse de trafic</h2>
+                    <h2 class="section-heading">Le modèle de balise : un carcan pour l'utilisateur ?</h2>
 
-                    <p>Bien qu'il ne soit pas mis en avant sur l'outil de création des urls de campagne officiel, Google Analytics accepte l'usage d'un sixième paramètre GET : utm_id. Son contenu est accessible via la dimension "Code de la campagne". Nativement conçu pour permettre le stockage d'identifiants, les valeurs qui y sont stockées peuvent servir de clé afin <a href="https://support.google.com/analytics/answer/4522476?hl=en">d'importer</a> dans Google Analytics des informations relatives au support et à la source d'une session.</p>
+                    <p>En effet, de prime abord, le modèle de balise fait pale figure en comparaison. Celui-ci restreint le champ des possibles de l'utilisateur à l'assignation de valeurs au sein de champs prédéfinis. Il s'avère même impossible au sein de certains systèmes de gestion des balises de visualiser les codes générés. Ainsi, la responsabilité de l'intégrité des codes est entièrement déléguée au système.</p>
 
-                    <p>Le paramètre utm_id permet donc non seulement de stocker une information supplémentaire sans effectuer de paramétrages personnalisés, mais aussi de limiter le nombre de paramètres GET inclus dans les urls des pages de destination, limitant par là-même les chances de commettre des erreurs et concourant ainsi à améliorer la qualité des données collectées. Comme la plupart des dimensions de Google Analytics, celle-ci peut être peuplée manuellement via la <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#campaignId">commande</a> JavaScript appropriée.</p>
+                    <p>Cependant, ce que l'utilisateur perd en liberté d'action, il le gagne en sécurité, fiabilité et pérennité de son implémentation. En optant pour un modèle, il s'assure que les codes de l'éditeur logiciel avec lequel il travaille seront automatiquement mis à jour par le système de gestion des balises, de façon transparente. Tout risque d'erreur pouvant impacter l'expérience utilisateur est écarté car les modèles proposés au sein de l'outil de gestion des balises ont fait l'objet d'une validation préalable.</p>
+
+                    <p>En outre, les champs pré-paramétrés limitent considérablement les risques d'erreur lors du paramétrage et font gagner un temps considérable à l'intégrateur en lui évitant de consulter une documentation technique. Autre avantage et non des moindres, en codifiant l'ajout de balises et en guidant à l'extrême l'utilisateur, les modèles rendent l'utilisation des outils de gestion des balises possible par des utilisateurs n'ayant aucune connaissance d'un quelconque langage informatique.</p>
 
                     <h2 class="section-heading">En conclusion</h2>
 
-                    <p>Difficile de choisir de ne pas peupler la dimension "Code de la campagne" une fois son existence dévoilée. D'un usage simplissime et extrêmement polyvalent, cet emplacement de stockage de Google Analytics a tout pour plaire. Dommage que son utilisation ne soit pas davantage mise en avant par les équipes de Google.</p>
+                    <p>Bien qu'ils puissent rebuter les utilisateurs les plus avancés des outils de gestion des balises, les modèles de balises présentent de multiples avantages lorsqu'ils sont comparés à celles dites personnalisées. Les modèles sont consubstantiels à la gestion des balises car ils constituent le socle permettant d'offrir la première des proposition de valeurs de ce type d'outils : permettre au plus grand nombre de les utiliser.</p>
 
                     <div id='disqus_thread'></div>
                 </div>
