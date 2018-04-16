@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Déterminer où se situe la limite acceptable pour ce phénomène">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Comment gérer l'effet de scintillement induit par les tests A/B ? - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Comment gérer l'effet de scintillement induit par les tests A/B ?</h1>
+                        <h2 class="subheading">Déterminer où se situe la limite acceptable pour ce phénomène</h2>
+                        <span class="meta">16 avril 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Recourir à un outil de tests A/B appliquant des modifications à la version d'origine de la page, dans le cadre de la mise en oeuvre d'une expérimentation, induit nécessairement l'apparition d'un effet de scintillement. Dans certains cas de figure, l'ampleur du phénomène est telle qu'elle peut remettre en cause purement et simplement le test mené. Pour cette raison, il est fondamental de savoir où s'arrêtent les effets indésirables, mais incoutournables, liés à l'exécution d'un test A/B ou multivarié et où commencent ceux liés à une erreur de paramétrage ou de déploiement.</blockquote>
+
+                    <h2 class="section-heading">Effet de scintillement : un phénomène dommageable mais incontournable</h2>
+
+                    <p>L'expression effet de scintillement renvoie à un phénomène visuel de durée variable lié à l'application des modifications par une solution de tests A/B, exécutée côté client, sur la version d'origine d'un dispositif. L'utilisateur voit s'afficher pendant un certain laps de temps la version standard de l'interface, avant que celle-ci ne soit modifiée, pour finir par revêtir son apparence finale. Plus le volume de modifications sera important et impactera d'éléments situés au dessus de la ligne de flottaison de l'utilisateur, plus l'effet de scintillement sera conséquent et donc perceptible.</p>
+                    <p>S'efforcer autant que possible de limiter l'ampleur du phénomène est indispensable, car l'un des pré-requis à la réalisation d'une expérience réussie est le caractère imperceptible de l'expérimentation. Si l'utilisateur voit s'afficher trop longtemps la version d'origine d'un design, ou d'une architecture de l'information, il se peut qu'il prenne conscience qu'un test est en cours. Même s'il ne réalise pas qu'il est inclus dans un test, son exposition première aux éléments modifiés par l'outil de tests A/B rend les résultats du test difficilement interprétables : la réaction de l'utilisateur était-elle liée à la présentation/interaction avec les élements nouvellements créés ou ceux constitutifs de la version originale ?</p>
+
+                    <h2 class="section-heading">Le point sur les éléments aggravants</h2>
+
+                    <p>L'effet de scintillement s'explique par le laps de temps séparant l'affichage d'un élément, résultant de l'interprétation du code original, de sa modification par les codes liés au test. Par conséquent, plus le chargement des codes de l'outil de test A/B sera tardif, plus l'effet de scintillement sera conséquent.</p>
+
+                    <p>Sur le Web, une méthode de chargement synchrone est recommandée. Dans les faits, cela n'est pas toujours possible, notamment en raison du recours croissant aux outils de gestion des balises comme moyen de déploiement des solutions de tests A/B. Par ailleurs, les navigateurs de dernière génération sont conçus pour optimiser au maximum la vitesse de chargement des pages ainsi que l'affichage des éléments en leur sein, quitte à différer le chargement de codes synchrones "non essentiels" tels que les codes des outils de tests A/B.</p>
+
+                    <p>Autre élément, souvent négligé, mais jouant un rôle déterminant dans l'effet de scintillement : les codes de l'outil de tests A/B proprement dit. Il faut distinguer ceux constitutifs de l'expérimentation, d'une part, qui ont pu être générés automatiquement par la plateforme de l'outil de tests A/B via l'utilisation d'une interface de type WYSIWYG, de ceux rédigés manuellement par l'utilisateur, mais aussi ses éléments constitutifs de la bibliothèque de l'éditeur logiciel, d'autre part, qui sont en charge de l'application des modifications et de la mesure des résultats.</p>
+
+                    <h2 class="section-heading">Est-il possible d'endiguer le phénomène ?</h2>
+
+                    <p>Absolument. Tout d'abord en comparant les performances des outils de différents éditeurs, lors de la phase de sélection initiale de l'outil de tests A/B. En paramétrant un test simple au moyen de l'interface graphique des éditeurs, identique entre les plateformes, il devient possible d'identifier de possibles écarts perceptibles par l'utilisateur lors du recours à un outil A VS un outil B.</p>
+
+                    <p>Par ailleurs, impliquer un développeur front expérimenté dans le processus de conception des tests peut permettre d'enregistrer de notables améliorations. En effet, son expertise lui permettra de rédiger les codes nécessaires à l'application des modifications de la façon la plus élégante et efficace possible.</p>
+
+                    <p>Masquer la page entièrement, le temps d'appliquer les différentes modifications nécessaires, a semblé un temps constituer la réponse la plus adéquate. Google Optimize est même allé jusqu'à recommander l'inclusion d'un élément supplémentaire nécessaire à la mise en oeuvre de cette approche. Néanmoins, du fait du chargement asynchrone de plus en plus fréquent des codes de tests A/B, le résultat final est décevant. Il peut être résumé comme suit : apparition de la version d'origine de la page > Application d'un masque blanc > chargement de la version modifiée de la page.</p>
+
+                    <p>En réalité, le meilleur moyen de réduire l'effet de scintillement consiste à limiter autant que possible le volume de modifications appliquées dans le cadre de la conduite du test. Un test A/B implique que seul un élément doit être modifié sur chacune des variations, sans quoi l'identification du facteur explication de l'amélioration ou de la régression de la performance devient impossible. Une attention similaire doit être portée au contrôle du volume d'éléments modifiés lors du paramétrage de tests multivariés ou de designs concurrents.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+
+                    <p>Il existe de multiples facteurs explicatifs de l'effet de scintillement, qui constitue malheureusement un phénomène incontournable. Néanmoins, il est possible d'influer sur plusieurs de ses causes afin d'en limiter l'ampleur. Tout juste tolérable dans le cadre de la réalisation de tests, il est tout à fait acceptable lors de la mise en oeuvre de scénarios de personnalisation. S'il devait s'avérer impossible de se limiter à un effet à peine persceptible par l'utilisateur, il deviendrait indispensable d'envisager le recours à des outils de tests A/B s'exécutant côté serveur et non plus côté client.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

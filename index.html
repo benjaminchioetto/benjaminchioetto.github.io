@@ -67,7 +67,8 @@ all copies or substantial portions of the Software.
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div id="progress-bar"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#home">B.CHIOETTO conseil</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +81,7 @@ all copies or substantial portions of the Software.
                         <a class="nav-link js-scroll-trigger" href="#home">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Prestations</a>
+                        <a class="nav-link js-scroll-trigger" href="#services">Offre de services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Clients</a>
@@ -125,96 +126,191 @@ all copies or substantial portions of the Software.
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading text-uppercase">Prestations</h2>
-                    <h3 class="section-subheading text-muted">Une liste des principales <strong>prestations</strong>, que je suis en mesure de réaliser, regroupées par <strong>domaines de compétences</strong><br>Envie d'en savoir <strong>plus</strong> ? Il vous suffit de <strong>cliquer</strong> sur les <strong>logos</strong></h3>
+                    <h3 class="section-subheading text-muted">Une liste des principales <strong>prestations</strong>, que je suis en mesure de réaliser, regroupées par <strong>domaines de compétences</strong></h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service1" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service1">
                 <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-area-chart fa-stack-1x fa-inverse"></i>
             </span>
              </a>
-                    <h4 class="service-heading">Analyse d'audience & Web-Analytics</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service1">Analyse d'audience & Web-Analytics</a></h4>
                     <p class="text-muted">Plan de marquage ; Audit d'implémentation ; Audit de qualité et de performance</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service2" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service2">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-tags fa-stack-1x fa-inverse"></i>
             </span>
              </a>
-                    <h4 class="service-heading">Gestion des balises & Tag management</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service2">Gestion des balises & Tag management</a></h4>
                     <p class="text-muted">Plan de marquage ; Ajout de tag / balises ; Audit de qualité et de performance</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service3" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service3">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-users fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Analyse comportementale</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service3">Analyse comportementale</a></h4>
                     <p class="text-muted">Paramétrage et analyse de cartes de chaleur et enregistrement de sessions utilisateurs</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service4" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service4">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Test A/B & personnalisation</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service4">Test A/B & personnalisation</a></h4>
                     <p class="text-muted">Paramétrage de tests A/B ; Personnalisation de l'expérience utilisateur</p>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center margbottom30">
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service5" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service5">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-smile-o fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Optimisation de l'UX</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service5">Optimisation de l'UX</a></h4>
                     <p class="text-muted">Audit temps de chargement et performance ; Audit architecture de l'information ; Audit ergonomie et design</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service6" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service6">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-trello fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Gestion de projet Web</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service6">Gestion de projet Web</a></h4>
                     <p class="text-muted">Pilotage de vos prestataires ; Tiers de confiance ; Accompagnement à la rédaction de cahier des charges</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service7" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service7">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-repeat fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Amélioration continue</h4>
-                    <p class="text-muted">Accompagnement à la mise en place d'une démarche d'amélioration continue</p>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service7">Amélioration continue</a></h4>
+                    <p class="text-muted">Accompagnement à la mise en place d'une démarche d'amélioration continue ; tableaux de bord</p>
                 </div>
                 <div class="col-md-3">
-                    <a data-toggle="modal" href="#service8" class="btn btn-primary btn-l text-uppercase unbordered">
+                    <a class="js-scroll-trigger" href="#service8">
                     <span class="fa-stack fa-3x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
             </span>
         </a>
-                    <h4 class="service-heading">Formation inter et intra</h4>
+                    <h4 class="service-heading"><a class="js-scroll-trigger" href="#service8">Formation inter et intra</a></h4>
                     <p class="text-muted">Formation individuelle et collective ; formation sur mesure</p>
                 </div>
             </div>
-            <a class="js-scroll-trigger chevron-cta" href="#services">
-                <i class="fa fa-chevron-circle-down"></i>
-            </a>
+        </div>
+        <div class="row margbottom30">
+            <div class="col-lg-8 mx-auto text-center">
+                <hr>
+                <h4 id="service1" style="margin-top:65px;">Analyse d'audience & Web-Analytics</h4>
+                <p class="text-muted"><em>Passer de l'information à l'action</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/web-analytics.jpg" alt="Web Analytics">
+                <p>Vous êtes satisfait de votre outil de <strong>Web analytics</strong>, mais pas de son <strong>paramétrage</strong>, ni de l'<strong>usage</strong> qui est fait des données associées ?</p>
+                <p>Vous êtes confronté à une <strong>refonte</strong> ou une <strong>dégradation de la performance</strong> de votre site Web ou de votre application ? A moins que vous ne cherchiez tout simplement à <strong>améliorer vos résultats</strong> ?</p>
+                <p>Je peux vous apporter les réponses <strong>appropriées</strong>, via la conception, l'amélioration et l'intégration d'un <strong>plan de marquage</strong>, la réalisation d'un <strong>audit</strong> de votre implémentation, ou encore au moyen d'une <strong>analyse</strong> minutieuse de vos données, y compris sur la problématique par excellence de l'acquisition de trafic : <strong>l'attribution</strong>.</p>
+
+                <p>Je <strong>rédige, implémente, recette, audite et enrichis</strong> des plans de marquage Google Analytics depuis <strong>plus de 4 ans</strong> et ce sur des sites de <strong>toutes tailles</strong>, de <strong>tous types</strong>, vitrine, média, institutionnel, e-commerce et s'adressant aussi bien à des audiences <strong>B2B</strong> que <strong>B2C</strong>. J'ai également réalisé une <strong>dizaine d'analyses approfondies</strong> de données stockées dans des propriétés Google Analytics, afin d'aboutir à la rédaction de <strong>recommandations d'optimisations</strong> opérationnelles.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service2">Gestion des balises & Tag management</h4>
+                <p class="text-muted"><em>Accélérer vos cycles de déploiement en toute sécurité</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/tag-management.jpg" alt="Tag management">
+                <p>Vous ne savez pas quel outil de <strong>gestion des balises choisir</strong> et souhaitez solliciter un expert pour réaliser un <strong>comparatif</strong> impartial des solutions du marché ?
+                    <p>A moins que vous n'ayiez déjà sélectionné un outil, mais cherchiez à vous faire assister dans la rédaction de son <strong>plan de marquage</strong> et/ou le suivi de son <strong>intégration</strong> ?</p>
+                    <p>Peut-être avez-vous finalisé l'installation du logiciel, mais désirez déléguer l'<strong>implémentation</strong> de vos balises à un tiers, ou offrir un <strong>support</strong> avancé à vos utilisateurs ? A moins qu'il ne s'agisse d'un besoin d'<strong>optimisation</strong> de votre implémentation ?</p>
+                    <p>Je suis à même de gérer ces différentes <strong>problématiques</strong>.</p>
+                    <p>Je <strong>rédige, implémente, recette, audite et enrichis</strong> des plans de marquage de Tag Management depuis <strong>plus de 4 ans</strong>. Par ailleurs, j'accompagne les annonceurs dans la <strong>pose</strong> et le <strong>paramétrage de tags</strong> sur leurs dispositifs de façon <strong>quotidienne</strong> depuis un an et demi.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service3">Analyse comportementale</h4>
+                <p class="text-muted"><em>Détecter les décalages entre vos dispositifs et les attentes de vos visiteurs</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/analyse-comportementale.jpg" alt="Analyse comportementale">
+                <p>Les <strong>données quantitatives</strong> stockées par les solutions de Web analytics ne permettent pas de savoir <strong>"pourquoi"</strong> un utilisateur a accompli une action, mais seulement de savoir <strong>"comment"</strong>.</p>
+                <p>Cependant, via un recueil complémentaire de données <strong>qualitatives</strong>, il devient possible d'analyser finement le <strong>comportement</strong> de vos utilisateurs.</p>
+                <p><strong>Cartes de chaleurs</strong>, <strong>sondages</strong>, <strong>questionnaires</strong>, <strong>analyse de sessions</strong>, <strong>tests utilisateurs</strong>, autant de moyens que je me propose de mettre à votre disposition pour parvenir à vos fins.</p>
+                <p>Depuis près de<strong>trois ans</strong> j'analyse les interactions des visiteurs avec des dispositifs, sous forme d'<strong>enregistrements de sessions</strong>, de <strong>cartes de chaleur</strong> et de <strong>réponses</strong> à des questionnaires. J'ai procédé au <strong>recoupement</strong> et au <strong>traitement</strong> de ces ensembles d'informations pour plus d'une <strong>dizaine de clients</strong>.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service4">Test A/B & personnalisation</h4>
+                <p class="text-muted"><em>Rendre l'expérience utilisateur optimale par l'expérimentation</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/test-ab.jpg" alt="Test A/B">
+                <p>Les <strong>tests A/B</strong> constituent le prolongement naturel d'une démarche d'analyse portant sur des données <strong>quantitatives</strong> et <strong>qualitatives</strong>. Ils constituent le socle de toute <strong>démarche expérimentale</strong>.</p>
+                <p>En manque d'<strong>idées</strong> ou de <strong>résultats satisfaisants</strong> ? Vous cherchez à <strong>personnaliser</strong> l'expérience de vos utilisateurs afin d'améliorer votre <strong>taux de conversion</strong> ?</p>
+                <p>Je peux vous accompagner dans l'identification d'opportunités d'<strong>optimisation</strong>, la conception d'un <strong>plan de test</strong> / <strong>personnalisation</strong>, ainsi que dans le <strong>paramétrage</strong> des outils liés et l'<strong>analyse</strong> de vos <strong>expérimentations</strong>.</p>
+                <p>J'ai rédigé mon <strong>mémoire de fin d'étude</strong> autour de la question des <strong>limites</strong> des outils de tests A/B afin que leurs utilisateurs puissent mieux les <strong>comprendre</strong> et ainsi plus facilement les <strong>sélectionner</strong> et les <strong>utiliser</strong>. Depuis près de trois ans j'ai paramétré des dizaines de <strong>tests A/B</strong> et de <strong>scénarios de personnalisation</strong>.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service5">Optimisation de l'UX</h4>
+                <p class="text-muted"><em>Faire tomber les barrières qui font obstacle à la conversion</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/optimisation-ux.jpg" alt="Optimisation de l'UX">
+                <p>Vous souhaitez diminuer le <strong>temps de chargement</strong> de vos pages ainsi que leur <strong>poids</strong> ? Vous connaissez les bonnez pratiques, mais ne souhaitez pas <strong>passer du temps</strong> à décrire et prioriser les <strong>actions</strong> nécessaires ?</p>
+                <p>Je vous propose de réaliser un <strong>audit de performance</strong> afin d'identifier des <strong>recommandations opérationnelles</strong>.</p>
+                <p>Alternativement, il m'est possible de porter un regard critique sur l'<strong>architecture de l'information</strong>, l'<strong>ergonomie</strong> et le <strong>design</strong> de votre dispositif pour réaliser une <strong>critique</strong> "experte".</p>
+                <p>Initié aux enjeux de <strong>l'architecture de l'information</strong>, de <strong>l'UX design</strong> et de la <strong> conception centrée utilisateur</strong> au cours de mon master, je n'ai cessé d'enrichir mes compétences par la pratique depuis <strong>plus de 3 ans</strong>. Par ailleurs, ces <strong>deux dernières années</strong>, j'ai réalisé <strong>cinq audits de performances</strong> afin d'accompagner des annonceurs dans l'optimisation de leur <strong>plateforme Web</strong>.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service6">Gestion de projet Web</h4>
+                <p class="text-muted"><em>Vous aider à donner le LA afin d'atteindre vos objectifs</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/gestion-projet-web.jpg" alt="Gestion de projet Web">
+                <p>Vous n'avez pas, ou plus, le <strong>temps</strong> de sélectionner et piloter vos <strong>prestataires Web</strong> et vos <strong>outils</strong> ?</p>
+                <p>La rédaction d'un <strong>cahier des charges</strong> vous empêche de vous focaliser sur des activités à plus forte <strong>valeur ajoutée</strong> ? Vous avez besoin de vous appuyer sur un <strong>tiers de confiance</strong> dans le cadre de vos échanges en interne et avec vos partenaires ?</p>
+                <p>Je peux prendre en charge ces tâches <strong>chronophages</strong> pour vous !</p>
+                <p>Je pilote l'intégralité du processus de <strong>refonte</strong> et <strong>d'optimisation continue</strong> du site Afix diffusion depuis plus de <strong>trois ans</strong>. J'ai partipé à la rédaction de <strong>réponses</strong> à plusieurs <strong>appels d'offres</strong> et ai également réalisé plusieurs <strong>benchmarks d'outils</strong> et <strong>cahier des charges</strong>.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service7">Amélioration continue</h4>
+                <p class="text-muted"><em>Vous accompagner dans la mise en place de vos processus d'optimisation</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/amelioration-continue.jpg" alt="Amélioration continue">
+                <p>Vous souhaitez au travers d'un <strong>projet pilote</strong> initier une démarche d'<strong>amélioration continue</strong> sur votre dispositif digital ?</p>
+                <p>Vous avez le sentiment d'avoir fait le <strong>maximum</strong> et ne trouvez plus de nouvelles <strong>opportunités d'amélioration</strong> satisfaisantes ? Vous savez <strong>"quoi"</strong> faire, mais pas <strong>"comment"</strong> organiser la démarche d'ensemble ?</p>
+                <p>Je mets mon <strong>expérience</strong> et mon <strong>savoir-faire</strong> en la matière à votre service.</p>
+                <p>Mes compétences dans la <strong>collecte</strong> et l'<strong>analyse</strong> de données <strong>quantitatives</strong> et <strong>qualitatives</strong>, ainsi que dans le domaine de l'<strong>expérimentation</strong> d'hypothèses d'amélioration m'ont permis d'élaborer une méthode pratique d'<strong>optimisation continue</strong>. Nourrie de mes <strong>lectures</strong> et de mon <strong>expérience personnelle</strong>, elle a été renforcée par ma découverte des <strong>méthodes </strong> et <strong>cadres</strong> tels que Scrum, l'agilité et le Lean, utilisés dans le monde du <strong>développement logiciel</strong>. Impossible de mettre en oeuvre une telle démarche sans <strong>tableaux de bord</strong>, je vous propose mon expertise en la matière afin de vous assister dans la <strong>sélection des indicateurs</strong> pertinents, l'<strong>extraction des données</strong> liées aux tableaux de bord et enfi n dans le paramétrage de l'<strong>outil de visualisation de données</strong> proprement dit.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h4 id="service8">Formation inter et intra</h4>
+                <p class="text-muted"><em>Vous faire monter en compétence à votre rythme</em></p>
+                <img class="img-fluid mx-auto img-services" src="img/prestations/formation-inter-intra.jpg" alt="Formation inter et intra">
+                <p>Vous en avez assez des <strong>formations</strong> qui ne vous permettent pas réellement de monter en <strong>compétences</strong> ?</p>
+                <p>Vous aspirez à davantage de <strong>pratique</strong> et moins de <strong>théorie</strong> ? Vous aborrez les présentations <strong>génériques</strong> et les <strong>plans de formations</strong> décorellés de vos <strong>objectifs business</strong> ?</p>
+                <p>Fort de mon expérience de <strong>formateur</strong> et de <strong>professeur</strong> - je suis intervenu dans deux <strong>masters</strong>, ai participé en tant qu'enseignant à un <strong>MOOC</strong> et ai animé plus d'une dizaine de formations <strong>inter</strong> et <strong>intra</strong> entreprises - je vous propose une séance basée sur un contenu <strong>personnalisé</strong>, s'appuyant sur des cas <strong>pratiques</strong>.</p>
+                <p>J'ai animé plus d'une <strong>quinzaine de formations inter et intra</strong>. Je suis également intervenu pendant <strong>deux ans</strong> en tant qu'<strong>enseignant</strong> au sein du Master Architecture de l'information de l'ENS de Lyon, ainsi que pour un module de <strong>formation continue</strong> au sein de cette structure. Par ailleurs, j'ai tenu un cours dans un cadre de <strong>formation initiale</strong> avec l'IAE de l'université Jean-Moulin Lyon 3. J'ai également participé à un <strong>MOOC</strong> diffusé sur la plateforme <strong>FUN</strong> traitant de <strong>référencement naturel</strong>.</p>
+            </div>
         </div>
     </section>
 
@@ -303,16 +399,27 @@ all copies or substantial portions of the Software.
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
-                    <img class="img-fluid d-block mx-auto" src="img/logos-outils/google-data-studio.jpg" alt="Google Data Studio">
+                    <img class="img-fluid d-block mx-auto margbottom30" src="img/logos-outils/google-data-studio.jpg" alt="Google Data Studio">
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <img class="img-fluid d-block mx-auto" src="img/logos-outils/hotjar.jpg" alt="Hotjar">
+                    <img class="img-fluid d-block mx-auto margbottom30" src="img/logos-outils/hotjar.jpg" alt="Hotjar">
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <img class="img-fluid d-block mx-auto" src="img/logos-outils/data-commander.jpg" alt="Data Commander">
+                    <img class="img-fluid d-block mx-auto margbottom30" src="img/logos-outils/data-commander.jpg" alt="Data Commander">
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <img class="img-fluid d-block mx-auto" src="img/logos-outils/usability-hub.png" alt="Usability Hub">
+                    <img class="img-fluid d-block mx-auto margbottom30" src="img/logos-outils/usability-hub.png" alt="Usability Hub">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <img class="img-fluid d-block mx-auto" src="img/logos-outils/supermetrics.jpg" alt="Supermetrics">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                </div>
+                <div class="col-md-3 col-sm-6">
                 </div>
             </div>
 
@@ -409,13 +516,13 @@ all copies or substantial portions of the Software.
                         <div class="pricing-item">
                             <ul>
                                 <li>
-                                    <p><strong>A</strong>udit / Plan de marquage</p>
+                                    <p><strong>Tous</strong> types de services</p>
                                 </li>
                                 <li>
-                                    <p><strong>M</strong>arque blanche</p>
+                                    <p><strong>Possible</strong> marque blanche</p>
                                 </li>
                                 <li>
-                                    <p><strong>S</strong>ous-traitance</p>
+                                    <p><strong>Possible</strong> sous-traitance</p>
                                 </li>
                             </ul>
                         </div>
@@ -442,7 +549,7 @@ all copies or substantial portions of the Software.
             <div class="row">
                 <div class="col-sm-12">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/photo-benjamin-chioetto.jpg" alt="">
+                        <img class="mx-auto rounded-circle" src="img/photo-benjamin-chioetto.jpg" alt="Photo Benjamin CHIOETTO">
                         <h4>Benjamin CHIOETTO</h4>
                         <p class="text-muted">Consultant et formateur digital analytics à Lyon</p>
                         <div class="col-lg-12 text-center">
@@ -536,272 +643,6 @@ all copies or substantial portions of the Software.
             </div>
         </div>
     </footer>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="service1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Analyse d'audience & Web Analytics</h2>
-                                <p class="item-intro text-muted">Vous aider à passer de l'information à l'action</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/web-analytics.jpg" alt="Web Analytics">
-                                <p>Vous êtes satisfait de votre outil de <strong>Web analytics</strong>, mais pas de son <strong>paramétrage</strong>, ni de l'<strong>usage</strong> qui est fait des données associées ?</p>
-                                <p>Vous êtes confronté à une <strong>refonte</strong> ou une <strong>dégradation de la performance</strong> de votre site Web ou de votre application ? A moins que vous ne cherchiez tout simplement à <strong>améliorer vos résultats</strong> ?</p>
-                                <p>Je peux vous apporter les réponses <strong>appropriées</strong>, via la conception, l'amélioration et l'intégration d'un <strong>plan de marquage</strong>, la réalisation d'un <strong>audit</strong> de votre implémentation, ou encore au moyen d'une <strong>analyse</strong> minutieuse de vos données.</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>Je <strong>rédige, implémente, recette, audite et enrichis</strong> des plans de marquage Google Analytics depuis <strong>plus de 4 ans</strong> et ce sur des sites de <strong>toutes tailles</strong>, de <strong>tous types</strong>, vitrine, média, institutionnel, e-commerce et s'adressant aussi bien à des audiences <strong>B2B</strong> que <strong>B2C</strong>. J'ai également réalisé une <strong>dizaine d'analyses approfondies</strong> de données stockées dans des propriétés Google Analytics, afin d'aboutir à la rédaction de <strong>recommandations d'optimisations</strong> opérationnelles.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="service2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Gestion des balises & Tag management</h2>
-                                <p class="item-intro text-muted">Accélérez vos cycles de déploiement en toute sécurité</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/tag-management.jpg" alt="Tag management">
-                                <p>Vous ne savez pas quel outil de <strong>gestion des balises choisir</strong> et souhaitez solliciter un expert pour réaliser un <strong>comparatif</strong> impartial des solutions du marché ?
-                                    <p>A moins que vous n'ayiez déjà sélectionné un outil, mais cherchiez à vous faire assister dans la rédaction de son <strong>plan de marquage</strong> et/ou le suivi de son <strong>intégration</strong> ?</p>
-                                    <p>Peut-être avez-vous finalisé l'installation du logiciel, mais désirez déléguer l'<strong>implémentation</strong> de vos balises à un tiers, ou offrir un <strong>support</strong> avancé à vos utilisateurs ? A moins qu'il ne s'agisse d'un besoin d'<strong>optimisation</strong> de votre implémentation ?</p>
-                                    <p>Je suis à même de gérer ces différentes <strong>problématiques</strong>.</p>
-                                    <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                    <p>Je <strong>rédige, implémente, recette, audite et enrichis</strong> des plans de marquage de Tag Management depuis <strong>plus de 4 ans</strong>. Par ailleurs, j'accompagne les annonceurs dans la <strong>pose</strong> et le <strong>paramétrage de tags</strong> sur leurs dispositifs de façon <strong>quotidienne</strong> depuis un an et demi.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="service3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Analyse comportementale</h2>
-                                <p class="item-intro text-muted">Détecter les décalages entre vos dispositifs et les attentes de vos visiteurs</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/analyse-comportementale.jpg" alt="Analyse comportementale">
-                                <p>Les <strong>données quantitatives</strong> stockées par les solutions de Web analytics ne permettent pas de savoir <strong>"pourquoi"</strong> un utilisateur a accompli une action, mais seulement de savoir <strong>"comment"</strong>.</p>
-                                <p>Cependant, via un recueil complémentaire de données <strong>qualitatives</strong>, il devient possible d'analyser finement le <strong>comportement</strong> de vos utilisateurs.</p>
-                                <p><strong>Cartes de chaleurs</strong>, <strong>sondages</strong>, <strong>questionnaires</strong>, <strong>analyse de sessions</strong>, <strong>tests utilisateurs</strong>, autant de moyens que je me propose de mettre à votre disposition pour parvenir à vos fins.</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>Depuis près de<strong>trois ans</strong> j'analyse les interactions des visiteurs avec des dispositifs, sous forme d'<strong>enregistrements de sessions</strong>, de <strong>cartes de chaleur</strong> et de <strong>réponses</strong> à des questionnaires. J'ai procédé au <strong>recoupement</strong> et au <strong>traitement</strong> de ces ensembles d'informations pour plus d'une <strong>dizaine de clients</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="service4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Test A/B & personnalisation</h2>
-                                <p class="item-intro text-muted">Rendre l'expérience utilisateur optimale par l'expérimentation</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/test-ab.jpg" alt="Test A/B">
-                                <p>Les <strong>tests A/B</strong> constituent le prolongement naturel d'une démarche d'analyse portant sur des données <strong>quantitatives</strong> et <strong>qualitatives</strong>. Ils constituent le socle de toute <strong>démarche expérimentale</strong>.</p>
-                                <p>En manque d'<strong>idées</strong> ou de <strong>résultats satisfaisants</strong> ? Vous cherchez à <strong>personnaliser</strong> l'expérience de vos utilisateurs afin d'améliorer votre <strong>taux de conversion</strong> ?</p>
-                                <p>Je peux vous accompagner dans l'identification d'opportunités d'<strong>optimisation</strong>, la conception d'un <strong>plan de test</strong> / <strong>personnalisation</strong>, ainsi que dans le <strong>paramétrage</strong> des outils liés et l'<strong>analyse</strong> de vos <strong>expérimentations</strong>.</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>J'ai rédigé mon <strong>mémoire de fin d'étude</strong> autour de la question des <strong>limites</strong> des outils de tests A/B afin que leurs utilisateurs puissent mieux les <strong>comprendre</strong> et ainsi plus facilement les <strong>sélectionner</strong> et les <strong>utiliser</strong>. Depuis près de trois ans j'ai paramétré des dizaines de <strong>tests A/B</strong> et de <strong>scénarios de personnalisation</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="service5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Optimisation de l'UX</h2>
-                                <p class="item-intro text-muted">Faire tomber les barrières qui font obstacle à la conversion</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/optimisation-ux.jpg" alt="Optimisation de l'UX">
-                                <p>Vous souhaitez diminuer le <strong>temps de chargement</strong> de vos pages ainsi que leur <strong>poids</strong> ? Vous connaissez les bonnez pratiques, mais ne souhaitez pas <strong>passer du temps</strong> à décrire et prioriser les <strong>actions</strong> nécessaires ?</p>
-                                <p>Je vous propose de réaliser un <strong>audit de performance</strong> afin d'identifier des <strong>recommandations opérationnelles</strong>.</p>
-                                <p>Alternativement, il m'est possible de porter un regard critique sur l'<strong>architecture de l'information</strong>, l'<strong>ergonomie</strong> et le <strong>design</strong> de votre dispositif pour réaliser une <strong>critique</strong> "experte".</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>Initié aux enjeux de <strong>l'architecture de l'information</strong>, de <strong>l'UX design</strong> et de la <strong> conception centrée utilisateur</strong> au cours de mon master, je n'ai cessé d'enrichir mes compétences par la pratique depuis <strong>plus de 3 ans</strong>. Par ailleurs, ces <strong>deux dernières années</strong>, j'ai réalisé <strong>cinq audits de performances</strong> afin d'accompagner des annonceurs dans l'optimisation de leur <strong>plateforme Web</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="service6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Gestion de projet Web</h2>
-                                <p class="item-intro text-muted">Vous aider à donner le LA afin d'atteindre vos objectifs</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/gestion-projet-web.jpg" alt="Gestion de projet Web">
-                                <p>Vous n'avez pas, ou plus, le <strong>temps</strong> de sélectionner et piloter vos <strong>prestataires Web</strong> et vos <strong>outils</strong> ?</p>
-                                <p>La rédaction d'un <strong>cahier des charges</strong> vous empêche de vous focaliser sur des activités à plus forte <strong>valeur ajoutée</strong> ? Vous avez besoin de vous appuyer sur un <strong>tiers de confiance</strong> dans le cadre de vos échanges en interne et avec vos partenaires ?</p>
-                                <p>Je peux prendre en charge ces tâches <strong>chronophages</strong> pour vous !</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>Je pilote l'intégralité du processus de <strong>refonte</strong> et <strong>d'optimisation continue</strong> du site Afix diffusion depuis plus de <strong>trois ans</strong>. J'ai partipé à la rédaction de <strong>réponses</strong> à plusieurs <strong>appels d'offres</strong> et ai également réalisé plusieurs <strong>benchmarks d'outils</strong> et <strong>cahier des charges</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 7 -->
-    <div class="portfolio-modal modal fade" id="service7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Amélioration continue</h2>
-                                <p class="item-intro text-muted">Vous accompagner dans la mise en place de vos processus d'optimisation </p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/amelioration-continue.jpg" alt="Amélioration continue">
-                                <p>Vous souhaitez au travers d'un <strong>projet pilote</strong> initier une démarche d'<strong>amélioration continue</strong> sur votre dispositif digital ?</p>
-                                <p>Vous avez le sentiment d'avoir fait le <strong>maximum</strong> et ne trouvez plus de nouvelles <strong>opportunités d'amélioration</strong> satisfaisantes ? Vous savez <strong>"quoi"</strong> faire, mais pas <strong>"comment"</strong> organiser la démarche d'ensemble ?</p>
-                                <p>Je mets mon <strong>expérience</strong> et mon <strong>savoir-faire</strong> en la matière à votre service.</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>Mes compétences dans la <strong>collecte</strong> et l'<strong>analyse</strong> de données <strong>quantitatives</strong> et <strong>qualitatives</strong>, ainsi que dans le domaine de l'<strong>expérimentation</strong> d'hypothèses d'amélioration m'ont permis d'élaborer une méthode pratique d'<strong>optimisation continue</strong>. Nourrie de mes <strong>lectures</strong> et de mon <strong>expérience personnelle</strong>, elle a été renforcée par ma découverte des <strong>méthodes </strong> et <strong>cadres</strong> tels que Scrum, l'agilité et le Lean, utilisés dans le monde du <strong>développement logiciel</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 8 -->
-    <div class="portfolio-modal modal fade" id="service8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl"></div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase">Formation inter et intra</h2>
-                                <p class="item-intro text-muted">Vous faire monter en compétence à votre rythme</p>
-                                <img class="img-fluid d-block mx-auto" src="img/prestations/formation-inter-intra.jpg" alt="Formation inter et intra">
-                                <p>Vous en avez assez des <strong>formations</strong> qui ne vous permettent pas réellement de monter en <strong>compétences</strong> ?</p>
-                                <p>Vous aspirez à davantage de <strong>pratique</strong> et moins de <strong>théorie</strong> ? Vous aborrez les présentations <strong>génériques</strong> et les <strong>plans de formations</strong> décorellés de vos <strong>objectifs business</strong> ?</p>
-                                <p>Fort de mon expérience de <strong>formateur</strong> et de <strong>professeur</strong> - je suis intervenu dans deux <strong>masters</strong>, ai participé en tant qu'enseignant à un <strong>MOOC</strong> et ai animé plus d'une dizaine de formations <strong>inter</strong> et <strong>intra</strong> entreprises - je vous propose une séance basée sur un contenu <strong>personnalisé</strong>, s'appuyant sur des cas <strong>pratiques</strong>.</p>
-                                <button class="btn btn-primary margbottom30 modal-cta" data-dismiss="modal" type="button">
-                                <i class="fa fa-envelope-o"></i> Me contacter</button>
-                                <p>J'ai animé plus d'une <strong>quinzaine de formations inter et intra</strong>. Je suis également intervenu pendant <strong>deux ans</strong> en tant qu'<strong>enseignant</strong> au sein du Master Architecture de l'information de l'ENS de Lyon, ainsi que pour un module de <strong>formation continue</strong> au sein de cette structure. Par ailleurs, j'ai tenu un cours dans un cadre de <strong>formation initiale</strong> avec l'IAE de l'université Jean-Moulin Lyon 3. J'ai également participé à un <strong>MOOC</strong> diffusé sur la plateforme <strong>FUN</strong> traitant de <strong>référencement naturel</strong>.</p>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
