@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Guide de mise en oeuvre étape par étape">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Comment mettre en place un A/B test d'outils avec son système de gestion des balises ? - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Comment mettre en place un A/B test d'outils avec son système de gestion des balises ?</h1>
+                        <h2 class="subheading">Guide de mise en oeuvre étape par étape</h2>
+                        <span class="meta">25 avril 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">La sélection initiale d'un outil, ou son remplacement, sont toujours des tâches difficiles à mener à bien. En dépit d'une phase préparatoire intense, émaillée de cahier des charges, de benchmarks et d'entretiens, rien ne remplace la mise à l'épreuve d'une solution en situation réelle. Sur le Web, les systèmes de gestion des balises permettent de mettre en oeuvre en quelques clics une véritable expérimentation afin d'identifier la configuration la plus performante.</blockquote>
+
+                    <h2 class="section-heading">Comment définir sa version de contrôle et ses variations ?</h2>
+
+                    <p>La nature de la version de contrôle peut varier selon le contexte dans lequel le test est conduit. S'il s'agit de déterminer si l'utilisation d'un nouveau type d'outil présentera une valeur ajoutée, la version de contrôle sera la version originale du site, exempte de tout outil de ce type. A l'inverse, s'il s'agit de déterminer, plusieurs mois ou années après son installation, si l'utilisation d'un outil se justifie toujours, la version de contrôle sera celle où l'outil en question demeurera activé. Il en ira de même s'il s'agit de mettre à l'épreuve l'outil en place avec un système concurrent.</p>
+                    <p>Les variations peuvent donc être, selon les contextes, une version du site vierge de tout outil ou une version alternative en intégrant un. Limiter autant que possible le nombre de variations au cours du test permettra d'écourter sa durée, car le volume de visiteurs nécessaire à l'obtention de résultats fiables en sera diminué.</p>
+
+                    <h2 class="section-heading">Les paramétrages incontournables</h2>
+
+                    <p>La première étape va consister à ajouter à votre système de gestion des balises les codes des éditeurs logiciels que vous souhaitez mettre en compétition.</p>
+                    <p>En deuxième étape vient la création d'une variable à même de générer, stocker et lire l'identifiant de l'audience à laquelle un visiteur aura été assigné. Un outil comme Tag Commander vous permettra nativement de procéder à un tel paramétrage, quand d'autres tels que Google Tag Manager ou Piwik Tag Manager nécessiteront que vous rédigiez vous même les codes permettant de créer vos bassins de population.</p>
+                    <p>La troisième étape est la plus simple. Vous allez assigner aux balises des différents outils concernés par le test une règle de déclenchement limitant leur exécution à une valeur spécifique de la variable paramétrée à l'étape 2. Exemple : outil_nomoutil.</p>
+                    <p>La quatrième étape porte sur l'injection de la valeur de la variable paramétrée à l'étape deux, dans votre outil de Web Analytics, afin de vous permettre de réaliser des analyses comparatives et d'identifier la version gagnante. Ainsi, si vous utilisez Google ou Piwik analytics, il vous faudra envoyer la valeur de la variable dans une dimension personnalisée.</p>
+
+                    <h2 class="section-heading">Le bonus : l'utilisation d'un outil de tests A/B</h2>
+
+                    <p>Il est tout à fait possible de s'arrêter à la quatrième étape. A ce stade, vous disposez d'un mécanisme permettant de séparer les visiteurs de façon aléatoire en différents ensembles afin de les exposer de façon controlée à un outil, puis de mesurer l'impact de cette exposition sur leur comportement via votre solution de Web Analytics.</p>
+
+                    <p>Il y a cependant des limites à une telle approche. Combien de temps le test doit-il durer ? Quel volume minimum de visiteurs doit être assigné à la version de contrôle et à chaque variation ? Quelle est la marge d'erreur au niveau des résultats enregistrés ? Les résultats obtenus sont-ils statistiquement significatifs ?</p>
+
+                    <p>Autant de questions auxquelles les d'outils de tests A/B sont en capacité d'apporter une réponse. Ce type de solution est en capacité de gérer de façon autonome la ventilation des visiteurs entre les différentes versions testées. En outre, les algorithmes probabilistes utilisés afin d'analyser les résultats du test conduit permettront d'écourter la durée de l'expérimentation en comparaison d'une analyse reposant sur une approche fréquentiste plus classique.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+
+                    <p>Mettre en place un A/B test d'outils via un système de gestion des balises est l'affaire de quelques minutes tout au plus. L'utilisation d'un outil de tests A/B en complément accroît légèrement le laps de temps nécessaire à la configuration de l'expérimentation, mais permet d'en abréger la durée, tout en  diminuant significativement le risque d'erreurs lors de l'interprétation des résultats.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
