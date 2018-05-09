@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zoom sur ces deux constituants de Google Analytics">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Client ID ou user ID, quel identifiant utiliser pour un suivi multi-appareils efficace ? - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Client ID ou user ID, quel identifiant utiliser pour un suivi multi-appareils efficace ?</h1>
+                        <h2 class="subheading">Zoom sur ces deux constituants de Google Analytics</h2>
+                        <span class="meta">09 mai 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">L'unification des sessions utilisateurs enregistrées sur différents appareils constitue l'un des enjeux du Web Analytics les plus stratégiques et dans le même temps le plus complexe. Google Analytics propose deux méthodes d'identification des utilisateurs : le client ID et le user ID. Connaître les caractéristiques et par extension les différences existant entre ces deux éléments s'avère indispensable pour effectuer un paramétrage et des analyses corrects.</blockquote>
+
+                    <h2 class="section-heading">Client ID : un identifiant spécifique à un appareil</h2>
+
+                    <p>Le client ID est conçu pour identifier l'appareil d'un utilisateur. Par défaut, il s'agit d'une valeur générée aléatoirement et stockée dans un cookie first party sur les environnements Web. Il s'agit là du premier biais lié à cet identifiant. En effet, contrairement à ce que son libellé pourrait laisser à penser, il s'avérera distinct pour chaque navigateur utilisé par le visiteur, puisqu'il n'existe pas de méthode permettant de lire les cookies stockés dans un navigateur B depuis un navigateur A.</p>
+                    <p>Les bibliothèques de programmation de Google Analytics permettent d'opter pour d'autres modalités de stockage que les cookies et surtout pour une définition personnalisée de la valeur client ID. Cette valeur est fondamentale car elle va servir à aggréger les sessions d'un utilisateur donné. Autrement dit, les utilisateurs dont il est question dans la quasi totalité des rapports Google Analytics sont des client ID. Toute modification de cette valeur entrainera automatiquement la création d'un nouvel utilisateur et donc une dissociation, au sein de la base de données Google Analytics, des informations collectées avant et après la modification. Par conséquent, modifier l'identifiant généré aléatoirement à l'origine, par celui retourné par votre CMS, par exemple, aboutira à augmenter artificiellement votre volume d'utilisateurs et posera des problèmes conséquents en terme d'attribution.</p>
+                    <p>Dernier problème avec le client ID, dans sa méthode de génération et de stockage par défaut, l'accès à un site A, puis à un site B, sans passer par un site A, conduira à générer deux identifiants distincts et donc deux utilisateurs séparés, même si les données sont envoyées à une unique propriété Google Analytics.                        
+                    </p>
+
+                    <h2 class="section-heading">User ID : une alternative décevante au client ID</h2>
+
+                    <p>Contrairement au client ID qui constitue une valeur devant obligatoirement être peuplée lors de l'envoi d'un appel à Google Analytics, quel qu'il soit, le User ID est totalement facultatif. Par ailleurs, Google ne propose aucune modalité de stockage de cette valeur via ces bibliothèques de programmation. Il relève de l'entière responsabilité des utilisateurs de Google Analytics de définir et stocker cette valeur. Elle permet, au moyen d'une vue n'affichant que des données pour lesquelles un user ID avait été spécifié, d'effectuer des réconciliations de sessions multi-appareils.</p>
+                    <p>Attention toutefois, si Google Analytics est capable d'associer à l'ensemble des hits d'une session un user ID défini, mettons à compter du troisième hit, il ne sera pas en capacité de le faire pour les sessions précédemment enregistrées sur l'appareil en question. Considérant le fait que l'identification d'un utilisateur constitue le seul moyen de suivi pérenne d'un appareil à un autre et que cette action n'intervient généralement pas sur l'ensemble des appareils et davantage en fin de parcours utilisateur, les données agrégées au moyen du user ID sont donc partielles. Cet élément permet  un complément d'informations intéressant, mais ne suffit pas à lui seul à résoudre la problématique du multi-appareils.</p>
+
+                    <h2 class="section-heading">Les dimensions comme moyen de contournement ?</h2>
+
+                    <p>Faut-il dès lors se résoudre à abandonner tout espoir d'effectuer des analyses multi-appareils plus fiables que celles possibles via les vues de type user ID ? Pas du tout !</p>
+                    <p>En effet, il s'avère possible d'envoyer dans une dimension personnalisée de niveau utilisateur le client ID du visiteur. Cette première dimension sera complétée par une seconde dédiée à l'enregistrement de la valeur envoyée comme user ID, toujours définie à un niveau utilisateur. Dès lors, il devient possible d'effectuer des recoupements entre des sessions enregistrées avant le premier envoi d'un user ID sur un appareil donné et celles enregistrées de façon antérieure, via des exports. En outre, ce système permet de compléter les rapports multi-appareils disponibles dans les vues Google Analytics de type user ID.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+
+                    <p>Il n'existe pas de solution miracle au problème du multi-appareils sur Google Analytics, les valeurs client ID et user ID présentant chacune des défauts insurmontables, mais qu'il est cependant possible de palier partiellement. Si un meilleur taux d'identification constitue une priorité, le recours à un éditeur logiciel spécialisé afin d'obtenir un identifiant constant, d'un appareil à un autre, peut constituer une base solide afin d'alimenter le client ID.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
