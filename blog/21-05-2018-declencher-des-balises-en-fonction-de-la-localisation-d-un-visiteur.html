@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Un paramétrage tout à la fois simple et complexe">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Déclencher des balises en fonction de la localisation d'un visiteur - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Déclencher des balises en fonction de la localisation d'un visiteur</h1>
+                        <h2 class="subheading">Un paramétrage tout à la fois simple et complexe</h2>
+                        <span class="meta">21 mai 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Au fil des années, le nombre de déclencheurs intégrés nativement au sein des outils de gestion des balises Web n'a cessé de croître. Les leaders du marché proposent ainsi de suivre automatiquement les clics, l'envoi de formulaires, le scroll et parfois même la visibilité d'un élément. Aux abonnés absents pour l'heure : la possibilité de déclencher des codes de façon automatique en fonction de l'adresse IP d'un visiteur. Comment expliquer un tel manque ? Est-il possible de le dépasser via un paramétrage "personnalisé", comme cela était le cas par le passé pour d'autres méthodes de déclenchement devenues depuis lors "natives". Faut-il s'attendre à ce qu'une telle option de ciblage soit proposée à l'avenir de façon native ?</blockquote>
+
+                    <h2 class="section-heading">Les causes d'un manque</h2>
+
+                    <p>Récupérer l'adresse IP d'un utilisateur, via le seul recours au langage JavaScript est impossible. C'est pour cette raison que contrairement à d'autres déclencheurs, comme les écouteurs de clics, la récupération de l'adresse IP ne figure pas parmi les options natives offertes aux utilisateurs d'un conteneur. En effet, obtenir cette donnée nécessite qu'un script, exécuté côté serveur, renvoie au système de gestion des balises, situé côté client, les informations relatives à la localisation du visiteur.</p>
+
+                    <h2 class="section-heading">Plusieurs modalités de mise en oeuvre</h2>
+
+                    <p>A date, conditionner le déclenchement de codes sur la base de l'emplacement d'un visiteur demeure parfaitement possible, mais nécessite des paramétrages et/ou développement spécifiques. Deux principales approches, chacune comportant des avantages et inconvénients peuvent être distinguées afin de répondre à ce besoin.
+                    </p>
+                    <p>La première consiste à inclure l'adresse IP du visiteur et/ou d'autres informations liées à ses coordonnées géographiques, tels que le pays dans lequel il se trouve ou encore la ville depuis laquelle s'effectue la connexion, directement au sein de la couche de données définie par les équipes techniques préalablement à l'inclusion du conteneur. Cette méthode a pour avantage de permettre une exploitation immédiate des coordonnées de l'utilisateur, dès le chargement de la première page visitée. Cependant, elle nécessite un développement et expose au sein de la couche de données, de façon normalisée, des informations sensibles, potentiellement accessibles aux autres éditeurs dont les codes sont déployés via le système de gestion des balises.                       
+                    </p>
+                    <p>Afin de répondre aux limites en terme de confidentialité, et d'agilité liées à la mise en oeuvre de cette première approche, les utilisateurs de systèmes de gestion des balises peuvent opter pour l'appel d'un script hébergé en propre ou d'un Web service spécialisé afin d'obtenir les informations désirées. Concrètement, l'appel d'une ressource conduit à obtenir en réponse l'adresse IP de l'utilisateur et/ou des données relatives à sa localisation découlant de son "décodage". Avec une telle méthode, il ne s'avère pas nécessaire de solliciter les équipes techniques pour rendre opérationnelle une mécanique de déclenchement basée sur l'emplacement du visiteur. Dans l'hypothèse ou le script serait hébergé en propre, le rôle du département informatique se limiterait tout au plus à ajouter un fichier sur un ftp, les codes en son sein pouvant avoir été rédigés directement par un utilisateur technique de l'outil de gestion des balises.</p>
+                    <p>Malheureusement, une fois de plus, la méthode présente des lacunes. En effet, comme tout appel émis depuis un outil de gestion des balises, celui visant à récupérer l'adresse IP est effectué de façon asynchrone. Par conséquent, la récupération des coordonnées géographiques du visiteur peut intervenir bien après le chargement de l'ensemble des ressources déployées par le conteneur. Le ciblage par adresse IP ne devient donc pleinement opérationnel qu'à compter de la deuxième page visitée par l'utilisateur au cours de sa session, à condition que la valeur récupérée initialement ait été stockée. En outre, le déclenchement des balises peut être retardé, tant que la récupération de l'adresse IP n'aura pas été menée à bien. Un tel mécanisme présente pour principal inconvénient un retard de déclenchement des balises liées et par conséquent entraine une diminution du volume total de données collectées par leur intermédiaire.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Il n'existe pour l'heure aucune méthode exempte de défauts permettant de déclencher un code, déployé par un système de gestion des balises, sur la base de l'emplacement géographique d'un visiteur. Les éditeurs logiciels hébergeant en propre les conteneurs de leurs clients pourraient, en rendant dynamique une partie du code constituant le conteneur, inclure automatiquement cette information en son sein, afin de dépasser les limites des différentes approches actuelles. Cependant, une telle évolution est peu probable étant donné le caractère sensible des informations traitées et des surcoûts qu'induirait un tel système chez l'éditeur logiciel du fait de la puissance de calcul supplémentaire à mobiliser côté serveur.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
