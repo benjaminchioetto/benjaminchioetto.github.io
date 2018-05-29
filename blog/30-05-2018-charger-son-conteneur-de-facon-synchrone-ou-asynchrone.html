@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Un dilemme cornélien">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Charger son conteneur de façon synchrone ou asynchrone - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Charger son conteneur de façon synchrone ou asynchrone</h1>
+                        <h2 class="subheading">Un dilemme cornélien</h2>
+                        <span class="meta">30 mai 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Tandis que certains outils de gestion des balises Web, tel que Google Tag Manager, sont depuis leur conception incompatibles avec une méthode de chargement synchrone, d'autres sytèmes tel que Tag Commander sont eligibles tout aussi bien à l'emploi de l'une et de l'autre. La prédominance, à date, de la méthode de chargement non bloquante signifie-t-elle qu'elle est systématiquement supérieure à son alternative bloquante ? La méthode synchrone est-elle vouée à disparaître car devenue obsolète ?</blockquote>
+
+                    <h2 class="section-heading">Chargement asynchrone : une approche exempte de tout reproche ?</h2>
+
+                    <p>Au fil des années, les études démontrant le lien de causalité existant entre l'optimisation des temps de chargement et l'amélioration des taux de conversion se sont succédées avec pour conséquence, une attention accrue portée à la surveillance des temps de chargement. Dans ce contexte, comment ne pas porter au pinacle un système de déploiement qui ne retarde pas le chargement des autres ressources ? En effet, avec un support du HTTP/2 qui avoisine les 80% de part de marché, à en juger par les chiffres disponibles sur Can I use, son impact sur le nombre de connexions pouvant être ouvertes concomitamment par un navigateur n'est plus aussi conséquent qu'il a pu l'être du temps du HTTP/1. Les qualités intrinsèques du système de gestion des balises demeurant inchangées par ce système d'appel, comment le système synchrone pourrait-il soutenir la comaraison avec son rival ?</p>
+
+                    <h2 class="section-heading">Chargement synchrone : une solution à utiliser dans des contextes spécifiques</h2>
+
+                    <p>Puisque le chargement synchrone d'un conteneur retarde l'appel des autres éléments inclus dans le code source des pages ainsi que l'envoi de l'événement DOM ready, il lui faut faire montre de qualités à même de compenser ces deux handicaps. Ce caractère bloquant le rend tout indiqué afin de corriger/définir/modifier des valeurs ou éléments auxquels font appel d'autres éléments situés en aval et qui ne seraient pas déployés via un système de gestion des balises.</p>
+                    <p>En outre, du fait de son caractère synchrone, un support total de la méthode document.write est possible. Bien qu'un abandon à terme par les navigateurs de cette commande décriée soit à prévoir, elle est la seule à permettre, à date, le déploiement par un système de gestion des balises d'un outil de tests A/B dans des conditions similaires à une inclusion directe en dur dans les pages.</p>
+                    <p>Enfin, couplé à la possibilité d'inclure directement au sein d'un conteneur le contenu de codes JavaScript externes, il permet de garantir une exécution la plus en amont possible de certains éléments jugés particulièrement stratégiques, tout en continuant à les gérer au moyen d'un conteneur. Mis entre les mains des équipes techniques, un tel outil peut même permettre le déploiement dans l'urgence et sur une courte durée de patchs et codes indispensables au bon fonctionnement des applications.
+                    </p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Bien que la méthode de déploiement asynchrone des conteneurs fasse désormais figure de norme, elle ne répond par parfaitement à certains enjeux liés au recours à un système de gestion des balises, tel que le déploiement de codes de façon prématurée dans la séquence de chargement initiale de la page ou encore la capacité à interagir parfaitement avec d'autres ressources incluses directement au sein du code source des pages. Dans certaines configurations, la valeur ajoutée de la méthode de déploiement synchrone dans ces deux domaines peut s'avérer suffisante pour éclipser les désagréments liés à l'allongement du temps de chargement total de la page qu'elle génère.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
