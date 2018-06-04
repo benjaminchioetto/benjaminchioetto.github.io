@@ -20,10 +20,10 @@ all copies or substantial portions of the Software.
     <meta name="robots" content="index, follow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Un dilemme cornélien">
+    <meta name="description" content="Principes de fonctionnement et finalités">
     <meta name="author" content="Benjamin CHIOETTO">
 
-    <title>Charger son conteneur de façon synchrone ou asynchrone - Benjamin CHIOETTO</title>
+    <title>Méthodes de détection et de suivi des modules de blocage - Benjamin CHIOETTO</title>
 
     <!-- Icon link -->
     <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
@@ -109,9 +109,9 @@ all copies or substantial portions of the Software.
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
-                        <h1>Charger son conteneur de façon synchrone ou asynchrone</h1>
-                        <h2 class="subheading">Un dilemme cornélien</h2>
-                        <span class="meta">30 mai 2018</span>
+                        <h1>Méthodes de détection et de suivi des modules de blocage</h1>
+                        <h2 class="subheading">Principes de fonctionnement et finalités</h2>
+                        <span class="meta">04 juin 2018</span>
                     </div>
                 </div>
             </div>
@@ -123,21 +123,21 @@ all copies or substantial portions of the Software.
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <blockquote class="blockquote">Tandis que certains outils de gestion des balises Web, tel que Google Tag Manager, sont depuis leur conception incompatibles avec une méthode de chargement synchrone, d'autres systèmes tel que Tag Commander sont eligibles tout aussi bien à l'emploi de l'une et de l'autre. La prédominance, à date, de la méthode de chargement non bloquante signifie-t-elle qu'elle est systématiquement supérieure à son alternative bloquante ? La méthode synchrone est-elle vouée à disparaître car devenue obsolète ?</blockquote>
+                    <blockquote class="blockquote">Le taux de pénétration des outils de blocage de publicités et de solutions de mesures d'audiences, dont le représentant le plus connu est Adblock, varie fortement selon les pays, les catégories d'appareils, les classes d'âge et de l'appétence pour les outils digitaux des utilisateurs. Dans ce contexte, il n'est guère étonnant que les études traitant du sujet avancent des pourcentages d'utilisation extrêmement différenciés, même lorsqu'elles traitent d'une même cible. Dès lors, être en capacité de mesurer de façon autonome la part réelle des utilisateurs ayant recours à ce type de solution sur son propre écosystème devient indispensable. Intérêt de cette question et méthodes de suivi, il est temps de faire le point sur ce sujet incontournable de l'analyse Web.</blockquote>
 
-                    <h2 class="section-heading">Chargement asynchrone : une approche exempte de tout reproche ?</h2>
+                    <h2 class="section-heading">Pourquoi mesurer le taux d'utilisation d'une extension pour navigateur ?</h2>
 
-                    <p>Au fil des années, les études démontrant le lien de causalité existant entre l'optimisation des temps de chargement et l'amélioration des taux de conversion se sont succédées avec pour conséquence, une attention accrue portée à la surveillance des temps de chargement. Dans ce contexte, comment ne pas porter au pinacle un système de déploiement qui ne retarde pas le chargement des autres ressources ? En effet, avec un support du HTTP/2 qui avoisine les 80% de part de marché, à en juger par les chiffres disponibles sur Can I use, son impact sur le nombre de connexions pouvant être ouvertes concomitamment par un navigateur n'est plus aussi conséquent qu'il a pu l'être du temps du HTTP/1. Les qualités intrinsèques du système de gestion des balises demeurant inchangées par ce système d'appel, comment le système synchrone pourrait-il soutenir la comparaison avec son rival ?</p>
+                    <p>Il convient tout d'abord de rappeler la distinction existant entre les bloqueurs de publicité d'une part, qui se limitent à masquer l'affichage de bannières et de vidéos à caractère publicitaire et les bloqueurs de solutions de mesure d'audience d'autre part, qui empêchent les traceurs marketing et publicitaires, notamment, de s'exécuter. L'usage de la première catégorie d'outils répond à une volonté d'améliorer l'expérience de navigation par la réduction du volume d'éléments visuels, tandis que la mise en oeuvre de la seconde catégorie de solutions a pour but de limiter la transmission d'informations concernant un utilisateur donné. La réduction des temps de chargement des pages peut également constituer un facteur explicatif de l'adoption de tels systèmes.</p>
+                    <p>La mesure de la qualité des données collectées constitue un enjeu incontournable lié à la mise en oeuvre de stratégies de pilotage basées sur la données. Pour cette raison, la mesure du pourcentage de visiteurs ayant recours à un bloqueur de solution de mesure d'audience présente un intérêt pour toutes les types de sites Web, peu importe leur cible ou leur type. En revanche, si de prime abord, la mesure du rejet des publicités peut sembler ne concerner que les sites Web proposant des espaces publicitaires à la vente, elle concerne dans les faits l'ensemble des annonceurs propriétaires d'un dispositif Web. En effet, le reciblage publicitaire est devenu à ce point une pratique courante que le blocage des publicités est pour ainsi dire, désormais, l'affaire de tous les éditeurs de sites Web.</p>
 
-                    <h2 class="section-heading">Chargement synchrone : une solution à utiliser dans des contextes spécifiques</h2>
+                    <h2 class="section-heading">Méthodes de détection et possibles cas d'usages</h2>
 
-                    <p>Puisque le chargement synchrone d'un conteneur retarde l'appel des autres éléments inclus dans le code source des pages ainsi que l'envoi de l'événement DOM ready, il lui faut faire montre de qualités à même de compenser ces deux handicaps. Ce caractère bloquant le rend tout indiqué afin de corriger/définir/modifier des valeurs ou éléments auxquels font appel d'autres éléments situés en aval et qui ne seraient pas déployés via un système de gestion des balises.</p>
-                    <p>En outre, du fait de son caractère synchrone, un support total de la méthode document.write est possible. Bien qu'un abandon à terme par les navigateurs de cette commande décriée soit à prévoir, elle est la seule à permettre, à date, le déploiement par un système de gestion des balises d'un outil de tests A/B dans des conditions similaires à une inclusion directe en dur dans les pages.</p>
-                    <p>Enfin, couplé à la possibilité d'inclure directement au sein d'un conteneur le contenu de codes JavaScript externes, il permet de garantir une exécution la plus en amont possible de certains éléments jugés particulièrement stratégiques, tout en continuant à les gérer au moyen d'un conteneur. Mis entre les mains des équipes techniques, un tel outil peut même permettre le déploiement dans l'urgence et sur une courte durée de patchs et codes indispensables au bon fonctionnement des applications.
-                    </p>
+                    <p>La méthode de détection des bloqueurs de publicités et des solutions de mesure d'audience est identique : demander à un navigateur Web de télécharger une ressource dont il est certain qu'un bloqueur empêcherait le téléchargement. Tout échec de la récupération du document sera le signal de l'usage, par un visiteur, d'un bloqueur.</p>
+                    <p>Il existe des services gratuits mettant à disposition des codes prêt à l'emploi permettant d'effectuer de tels tests. Alternativement, il est possible d'héberger sur ses propres serveurs les fichiers à utiliser dans le cadre de la vérification. Dans tous les cas l'exécution de tous types de codes JavaScript, une fois le blocage détecté, est possible.</p>
+                    <p>De ce fait, comptabiliser au moyen d'un événement à destination de son outil de Web Analytics le volume d'utilisateurs refusant les publicités s'avère trivial. Quid cependant de ceux bloquant l'exécution de traceurs ? Comment parvenir à suivre le comportement de ceux mettant en oeuvre des outils visant précisément à les préserver au maximum des outils de mesure quantitatifs ? En déportant le mécanisme de mesure côté serveur afin de contourner le bloqueur s'exécutant dans le navigateur du visiteur. Concrètement, il s'agira d'amener le navigateur à appeler un script hébergé côté serveur, qui sera lui même en charge d'utiliser le protocole de mesure de l'outil d'analyse web. Le dépôt du fichier directement sur le domaine de l'éditeur s'avérera préférable afin de prévenir tout risque de blocage de la requête.</p>
 
                     <h2 class="section-heading">En conclusion</h2>
-                    <p>Bien que la méthode de déploiement asynchrone des conteneurs fasse désormais figure de norme, elle ne répond par parfaitement à certains enjeux liés au recours à un système de gestion des balises, tel que le déploiement de codes de façon prématurée dans la séquence de chargement initiale de la page ou encore la capacité à interagir parfaitement avec d'autres ressources incluses directement au sein du code source des pages. Dans certaines configurations, la valeur ajoutée de la méthode de déploiement synchrone dans ces deux domaines peut s'avérer suffisante pour éclipser les désagréments liés à l'allongement du temps de chargement total de la page qu'elle génère.</p>
+                    <p>La mesure du blocage des publicités et des solutions de mesure d'audience présente un intérêt pour tous les éditeurs de site Web, peu importe leur secteur d'activité. La détection est aisée et ne présente pas un quelconque défi technique. Dès lors, pourquoi ne pas tenter la mise en oeuvre d'un tel système de mesure ?</p>
 
                     <div id='disqus_thread'></div>
                 </div>
