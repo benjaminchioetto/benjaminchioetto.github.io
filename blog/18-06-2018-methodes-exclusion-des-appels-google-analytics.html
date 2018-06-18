@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Inventaire des aproches existantes">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Méthodes d'exclusion des appels Google Analytics - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Méthodes d'exclusion des appels Google Analytics</h1>
+                        <h2 class="subheading">Inventaire des aproches existantes</h2>
+                        <span class="meta">18 juin 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Ne pas prendre en compte, sur ses propres dispositifs Web, les appels à destination de Google Analytics générés par les utilisateurs internes à une entreprise, ainsi que ses partenaires et sous-traitants, est essentiel dans une démarche de contrôle de la qualité des données. Comme toujours, différentes méthodes existent afin de répondre à ce cette problématique. Utilisées conjointement, elles se complètent les unes les autres et permettent in-fine d'obtenir un résultat satisfaisant.</blockquote>
+
+                    <h2 class="section-heading">Désactiver les appels via un paramétrage de l'appareil du visiteur</h2>
+
+                    <p>Installer une extension sur son navigateur en charge d'éviter que tout appel soit transmis à Google Analytics est de loin l'option la plus simple pour qui souhaite éviter toute pollution des données de sa propriété Google Analytics. Google ne fournit-il pas une extension officielle dans le seul but d'éviter à l'utilisateur désireux de ne pas être suivi par son outil de mesure d'audience de parvenir à ses fins ? Alternativement, des modules complémentaires pour navigateurs basés sur des listes d'exclusion tels que Ghostery ou uBlock Origin ne permettent-ils pas également à tout à chacun de bloquer Google Analytics ?</p>
+                    <p>Cette approche, aussi séduisante soit elle, n'est pas exempte de défauts. Tout d'abord, elle conduit à désactiver Google Analytics sur l'ensemble des sites visités au moyen du navigateur sur lequel l'extension a été installée, ce qui peut poser problème lorsqu'une personne travaille sur un espace de préproduction où il s'avère nécessaire pour elle de vérifier le bon paramétrage de Google Analytics et donc de transmettre des appels. En outre, l'extension officielle de Google n'est pas installable sur Internet Explorer ou Microsoft Edge, avec pour conséquence, dans certains cas de figure, d'empêcher le filtrage d'un volume conséquent d'appels transmis.<p>
+                    <p>Ceci étant, l'extension officielle de Google, contrairement à des modules bloquant purement et simplement le téléchargement des bibliothèques JavaScript de Google Analytics, empêche simplement l'envoi des hits et non leur construction côté client. Ceci permet à intégrateur de vérifier qu'il n'a pas commis d'erreurs lors de l'appel aux fonctions de l'API JavaScript de Google Analytics.<p>
+                    <p>Il existe bien une méthode de blocage côté client fonctionnant sur tous les navigateurs, qui consiste à associer sur son poste de travail au nom de domaine www.google-analytics.com une IP fictive de sorte à empêcher le téléchargement des fichiers JavaScript nécessaires au bon fonctionnement de Google Analytics. Cependant, si cette solution fonctionne sur l'ensemble des navigateurs, elle présente les même inconvénients qu'un recours à un bloqueur de traceurs comme uBlock Origin.</p>
+                    <p>Aucune des méthodes impliquant d'effectuer un paramétrage sur le poste de travail de l'utilisateur n'est satisfaisante, sans compter qu'au-delà de leurs défauts listés précédemment, elles posent problème par leur caractère volontariste. Par conséquent, elles s'avéreront toujours moins fiables qu'une méthode de filtrage qui s'exécuterait côté serveur.</p>
+
+                    <h2 class="section-heading">Rejeter les appels via l'interface d'administration de Google Analytics</h2>
+
+                    <p>Puisque Google Analytics permet de paramétrer des filtres, qui servent à réécrire et trier les données préalablement à leur stockage en base, ne s'agirait-il pas là de la méthode ultime répondant au besoin d'exclure les appels internes à l'entreprise ? Premier avantage de cette approche, elle ne requière aucune action particulière de la part des utilisateurs qu'elle vise à exclure. Paramétré depuis l'interface de Google Analytics, un filtre peut facilement être répliqué d'une propriété à l'autre, jusqu'à un niveau de granularité vue. Cependant, comme tout mécanisme d'exclusion, celui de Google Analytics requiert de spécifier des critères en vue de séparer le bon grain de l'ivraie.</p>
+                    <p>Dans cette optique, l'adresse IP est la dimension la plus couramment utilisée. Mais elle ne permet pas de répondre de façon satisfaisante à l'enjeu posé par l'identification d'utilisateurs nomades n'ayant pas recours à un système proxy sur leur appareil. En outre, à l'ère du RGPD, l'anonymisation des adresses IP transmises à Google Analytics s'impose progressivement comme un standard. Or, le retrait du dernier octet de l'adresse IP, matérialisation concrète de l'anonymisation, a lieu dès réception de l'appel, c'est à dire AVANT l'application des filtres, ce qui diminue grandement l'efficacité du système de filtrage.</p>
+                    <p>Puisque le rejet côté serveur est, tout comme celui effectué via un paramétrage de l'appareil du visiteur, sujet à critique, la solution ne pourrait-elle pas venir d'un outil exécuté côté client, mais ne nécessitant pas ou peu d'intervention de la part de l'utilisateur ?</p>
+
+                    <h2 class="section-heading">Eviter tout appel grâce à l'outil de gestion des balises</h2>
+
+                    <p>L'implémentation de solutions de mesure d'audience via des systèmes de gestion des balises est devenue la norme depuis plusieurs années et Google Analytics ne fait pas exception à la règle. Assigner aux balises Google Analytics contenues dans l'outil de gestion des balises une règle de blocage correspondant à la détection d'un visiteur "interne" permettrait à priori de répondre de façon simple au problème de la gestion des appels liés aux utilisateurs internes. Malheureusement, tout comme les filtres paramétrés dans l'interface de Google Analytics, le système de gestion des balises a besoin d'une ou plusieurs valeurs afin d'identifier la nature du visiteur.</p>
+                    <p>Le moyen le plus simple de la générer consiste à demander aux utilisateurs internes d'ajouter en page d'accueil de leur navigateur une des urls du site à exclure comprenant un paramètre GET de type excl=1. En cas de détection de ce paramètre, le système de gestion des balises créera automatiquement un cookie de session qui servira à alimenter la règle d'exclusion des balises Google Analytics. Avec cette approche, le paramétrage demandé à l'utilisateur peut fonctionner sur tous les navigateurs, y compris ceux s'exécutant sur mobile. La mise en oeuvre est simple et rapide et peut être automatisé lors de la configuration initiale des machines des collaborateurs.</p>
+                    <p>Loin d'être parfaite, l'approche reposant sur un paramétrage de l'outil de gestion des balises constitue un compromis entre les deux approches précédemment exposées, bien qu'elle ne s'avère pas, comme elles, pleinement satisfaisante.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Qu'elles soient exécutées côté client ou côté serveur, aucune des méthodes de blocage de Google Analytics destinées aux seuls usagers internes ne donne pleinement satisfaction. Pour cette raison, il est fortement recommandé aux organisations désireuses de fiabiliser leurs données de recourir aux trois approches présentées dans ce billet simultanément. Cependant, le RGPD et la directive ePrivacy, en rendant obligatoire la mise à disposition d'un mécanisme d'exclusion à destination de l'ensemble des visiteurs, pourrait sonner le glas de tels paramétrages. En effet, s'il est possible via une interface graphique simple et incontournable de s'exclure de toute mesure, pourquoi se perdre en paramétrages complexes ?</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
