@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Elements de connaissance indispensables">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Suivi multi-domaines avec Google Analytics - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Suivi multi-domaines avec Google Analytics</h1>
+                        <h2 class="subheading">Elements de connaissance indispensables</h2>
+                        <span class="meta">02 juillet 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">La problématique du suivi multi-domaines sur Google Analytics est aussi incontournable qu'anxiogène. Abondamment documentée depuis des années, elle n'en reste pas moins complexe à adresser, y compris pour des intégrateurs expérimentés. Une bonne raison de revenir en détail sur les différents éléments indispensables à la mise en oeuvre d'un suivi multi-domaines efficace.</blockquote>
+
+                    <h2 class="section-heading">Rappels concernant les identifiants Google Universal Analytics</h2>
+
+                    <p>J'ai déjà abordé en détail les différences existant entre client ID et user ID dans <a href="https://www.benjaminchioetto.fr/blog/09-05-2018-client-id-ou-user-id-quel-identifiant-utiliser-pour-suivi-multi-appareils.html">ce billet</a>. S'il est possible de mettre en oeuvre un suivi multi-appareils au moyen du user ID, cette méthode implique de disposer d'un identifiant constant afin de suivre dans la durée un utilisateur. Or, l'obtention d'une telle information n'est possible la plupart du temps qu'en cas d'authentification d'un visiteur, ce qui limite considérablement la portée d'un tel système de suivi multi-domaines. Par ailleurs, les données collectées sont déversées exclusivement dans des vues de type user ID rendant impossible la consultation de parcours utilisateur complet, c'est à dire incluant les pages visitées AVANT l'authentification du visiteur.</p>
+                    <p>Dans ce contexte, il est logique que  le client ID soit amené à jouer le rôle de protagoniste dans tout plan de marquage impliquant d'effectuer un suivi multi-domaines. Bien que sujet à critiques, car incapable de gérer nativement la problématique du multi-appareils, un tel identifiant s'avère adapté afin d'effectuer un suivi de navigation multi-domaines au moyen d'un unique navigateur.</p>
+
+                    <h2 class="section-heading">Méthodes de suivi multi-domaines canoniques de Google Universal Analytics</h2>
+
+                    <p>Par défaut, le client ID est stocké dans un cookie first party ayant pour libellé _ga et inscrit sur le domaine principal visité par l'utilisateur. Un tel paramétrage permet de lire et donc de conserver un même identifiant utilisateur même si le visiteur se rend sur différents sous-domaines rattachés à un même domaine principal.</p>
+                    <p>En revanche, si un utilisateur peut être amené à visiter différents noms de domaines de premier niveau, il s'avère alors nécessaire de transmettre le client ID d'un site à l'autre au moyen du plugin linker de la bibliothèque JavaScript Google Analytics. Ce module requiert pour tout paramétrage de spécifier les noms de domaines à inclure dans le périmètre du suivi multi-domaines. Dès lors, automatiquement, un paramètre GET _ga associé au client ID sera ajouté aux urls des pages dont le nom de domaine serait distinct du domaine courant ET correspondrait à l'un des domaines spécifiés durant la phase de configuration. L'ajout du paramètre s'effectuera en cas d'envoi d'un formulaire ou de clic sur un lien. Il faudra également veiller à autoriser l'utilisation de la valeur associée au paramètre _ga lors de la création du traceur Google Analytics, sans quoi bien qu'inclus dans l'url, il serait ignoré.</p>
+                    <p>Cette méthode, élégante et automatique ne permet pas pour autant d'effectuer un suivi satisfaisant de l'ensemble des scénarios de navigation multi-domaines. Premier problème, si un utilisateur se rend sur un site A, puis sur un site B sans passer par le site A, bien qu'il existe des passerelles entre les deux sites, le suivi multi-domaines s'avérerait inopérant tandis que deux client ID distincts seraient générés. En outre, si dans un second temps l'utilisateur se rendait du site A vers le site B, ou inversement, l'un des deux identifiants initialement généré serait irrémédiablement perdu et avec lui le parcours utilisateur qui lui était lié. Par ailleurs, il peut arriver que le paramètre _ga soit supprimé avant l'accès au site de destination du fait de redirections. Sans oublier que la bibliothèque JavaScript de Google Analytics ne permet pas de décorer l'ensemble des liens et formulaires. En outre, si différentes traceurs sont présents sur la page et qu'ils stockent tous le client ID dans un unique cookie _ga, bien qu'ils n'aient pas tous été paramétrés pour lire et récupérer le paramètre _ga inclus dans l'url, ils seraient malgré tout contraints de l'utiliser, ce qui poserait problème.</p> 
+                    <p>Enfin, il faut savoir qu'outre le client ID, un horodatage est associé au paramètre GET _ga de sorte à éviter qu'un identifiant utilisateur soit transmis lors d'un partage d'url entre utilisateurs. Cet horodatage s'accompagne d'une empreinte navigateur qui vient compléter le dispositif de protection, afin que l'url d'une page partagée et chargée immédiatement par son destinataire et comprenant le paramètre _ga n'aboutisse pas à une réutilisation de ce paramètre. Si elle peut sembler en apparence bienvenue, cette idée peut poser problème, lorsque les paramétrages d'un utilisateur tel que la résolution d'écran ou les plugins autorisés sont amenés à varier d'un site à l'autre, ce qui peut conduire paradoxalement au rejet d'un client ID pourtant valide.</p>
+
+                    <h2 class="section-heading">Méthodes de suivi multi-domaines alternatives à employer avec Google Universal Analytics</h2>
+
+                    <p>Les principales limites de la méthode de suivi multi-domaines native de Google Analytics sont liées à un stockage dans un cookie first party du client ID. Enregistrer le client ID dans un cookie tiers permet de cesser de recourir à une méthode de transmission de l'identifiant utilisateur basée sur l'url. Cependant, elle peut conduire à diminuer significativement le taux de reconnaissance utilisateur, car un nombre croissant d'utilisateurs bloque les cookies tiers. Dans ce contexte, le recours à un outil d'empreinte navigateur permet de bénéficier d'une méthode d'identification plus fiable que celle proposée par défaut par Google Analytics, sans présenter les inconvénients liés à un recours à des cookies tiers.</p> 
+                    <p>Une telle solution demeure cependant sujette au biais du multi-appareils. Seul le recours à un service web proposant l'identification d'un utilisateur reposant sur un graphique d'appareils peut permettre d'obtenir un véritable saut qualitatif dans le suivi multi-domaines tout en garantissant qu'il permette de suivre un utilisateur entre différents appareils.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Google Analytics fournit des outils permettant de facilement suivre un utilisateur sur ses différents domaines, du moment qu'il utilise un unique navigateur et se sert de passerelles existant entre les différents sites afin de les découvrir. Les utilisateurs cherchant à mettre en oeuvre un suivi multi-appareils et multi-domaines efficace devront nécessairement se tourner vers une implémentation personnalisée permettant de dépasser les limites inhérentes aux méthodes par défaut proposées par les équipes de Google Analytics.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
