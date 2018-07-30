@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quelles méthodes employer sur le Web ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Suivre des interactions avec un système de gestion des balises - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Suivre des interactions avec un système de gestion des balises</h1>
+                        <h2 class="subheading">Quelles méthodes employer sur le Web ?</h2>
+                        <span class="meta">30 juillet 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Sur le Web, suivre des interactions comme des clics, des envois de formulaires, l'affichage d'un élément, le pourcentage de scroll, au moyen d'un outil de gestion des balises, est une tâche banale. Les outils leaders du marché proposent tous des déclencheurs/règles natives permettant de détecter les actions de l'utilisateur sur une page Web. Il est ainsi possible pour l'utilisateur final de créer des déclencheurs complexes, sans qu'il s'avère nécessaire de rédiger la moindre ligne de codes. Les utilisateurs techniques doivent-ils eux aussi recourir à ces déclencheurs, ou existe-il des approches alternatives reposant sur un usage plus poussé des codes JavaScript par l'utilisateur final ?</blockquote>
+
+                    <h2 class="section-heading">Opter pour les balises et déclencheurs pré-paramétrés : une évidence à questionner</h2>
+
+                    <p>Afin de rendre plus aisément compréhensible la comparaison entre différents systèmes de détection et de collecte d'informations, nous allons prendre un scénario simple, incontournable sur la plupart des plans de marquage Web Analytics, et partir du principe que l'outil de gestion des balises est Google Tag Manager. L'objectif ? Transmettre à Google Analytics un événement en cas de scroll d'un pourcentage donné des pages, en cas de clic sur les liens sortants, les entrées du menu de navigation ET lors de l'envoi du formulaire de contact du site.</p>
+                    <p>Si l'intégrateur en charge du paramétrage de ces différents éléments choisit d'opter exclusivement pour les écouteurs Google Tag Manager natifs, ainsi que pour des balises d'événements Google Analytics pré-paramétrées, il lui faudra ajouter à son conteneur un total de 4 déclencheurs, chacun d'entre eux étant relié à une balise d'événement Google Analytics distincte, sans compter les variables natives liées aux déclencheurs.<p>
+                    <p>Le volume d'éléments ajoutés au sein du conteneur est donc égal à un peu plus de deux fois le nombre d'événements Google Analytics distincts inclus à l'occasion du paramétrage. Cette profusion constitue tout à la fois une force et une faiblesse.</p>
+                    <p>En effet, elle rend le plan de marquage immédiatement intelligible et aisément modifiable, car il existe pour ainsi dire une balise et un déclencheur par indicateur suivi au sein du plan de marquage. Les néophytes sur les outils de gestion des balises apprécieront cette dualité. Nul besoin par ailleurs de rédiger un plan de marquage sur un support externe à l'outil, tout s'y trouve consigné.</p>
+                    <p>Cette approche montre cependant ses limites lorsque des plans de marquage plus conséquents sont mis en oeuvre. Lorsque plus d'une quarantaine de balises se trouve intégrée, pour le seul suivi Google Analytics, il devient malaisé de localiser rapidement un élément, à moins d'opter pour la fonction de recherche, mais qui suppose un recours systématique à une nomenclature de nommage afin de s'avérer efficace.</p>
+                    <p>L'approche native, puisqu'elle présente autant d'inconvénients que d'avantages, ne saurait être considérée comme pleinement satisfaisante S'il s'avère problématique d'ajouter autant d'éléments au sein de l'interface Google Tag Manager, ne serait-il pas plus pertinent de les externaliser afin de gagner en clarté ?</p>
+
+                    <h2 class="section-heading">Externalisation des déclencheurs : une fausse bonne idée</h2>
+
+                    
+                    <p>En effet, plutôt que de paramétrer quatre événements, ainsi que quatre déclencheurs au sein du conteneur, il suffirait d'ajouter une unique balise d'événement Google Analytics et de l'associer à un déclencheur de type événement personnalisé ainsi qu'à des variables d'événement visant à peupler respectivement la catégorie, l'action et enfin le libellé de l'événement Google Analytics.</p>
+                    <p>Dans ce schéma, le gestionnaire de balises fait office de simple récepteur d'un signal transmis par des codes situés à l'extérieur du conteneur. Les équipes techniques sont responsables de la mise en place et du maintien des déclencheurs, ce qui permet de contourner l'écueil le plus courant lié à l'utilisation de systèmes de gestion des balises : le caractère éphémère des classes et identifiants HTML et plus généralement de l'architecture des documents HTML, qui conduit fréquemment à ce que des déclencheurs natifs parfaitement fonctionnels à un instant T deviennent du jour au lendemain inopérants.</p>
+                    <p>Cependant, une fois encore, cette méthodologie s'accompagne de limites criantes. Bien que dans cette configuration, les équipes techniques soient théoriquement responsables du maintien du caractère fonctionnel du plan de marquage, cela ne suffit pas à garantir une absence totale de régression. Par ailleurs, l'un des principaux bénéfices des systèmes de gestion des balises, l'agilité, est perdu avec ce système de suivi, car l'intégrateur de l'outil de Web Analytics devient totalement dépendant des équipes techniques auprès desquelles il dépose ses demandes d'ajout de codes de suivi des interactions. Le caractère centralisateur de l'outil de gestion des balises s'en trouve également diminué.</p>
+                    <p>Enfin et c'est probablement le plus important, en l'absence d'un plan de marquage précis et maintenu à jour, il s'avère totalement impossible de prendre connaissance, à partir de la seule interface Google Tag Manager, des éléments suivis sur le site. De ce fait, les passations de dossiers sur ce type de plan de marquage s'accompagnent le plus souvent de longues séries de tests et d'inspections des données présentes dans l'outil de Web Analytics afin de réaliser un inventaire complet des éléments effectivement mesurés.</p>
+                    <p>Une fois encore, le système présente autant d'inconvénients qu'il offre davantage. Il est temps d'explorer la troisième voie : celle de la rédaction manuelle des écouteurs d'interactions.</p>
+                    
+                    <h2 class="section-heading">Rédiger soi-même les écouteurs d'interactions : une méthode avantageuse</h2>
+
+                    <p>Le point de départ de cette méthode consiste à ajouter une balise de type personnalisée et d'y inclure les différents écouteurs de clics, scroll et envoi de formulaire nécessaires. Selon les bibliothèques incluses sur le site concerné, l'intégrateur optera pour le JavaScript natif ou un système simplifiant la rédaction des codes.</p>
+                    <p>Une fois les écouteurs opérationnels, il conviendra d'adjoindre à chacun d'entre eux un commentaire, afin qu'il soit possible rapidement d'en comprendre la finalité et le périmètre. Enfin, au sein de la fonction déclenchée suite à l'interaction, il s'agira d'ajouter un envoi de données au conteneur sous la forme d'un événement personnalisé associé à des variables, qui seront transmis, suite à leur réception par le conteneur, à une unique balise d'événements Google Analytics.</p>
+                    <p>Il n'est pas exagéré de parler d'un véritable syncrétisme entre les deux méthodes précédemment évoquées, qui permet de dépasser leurs limites respectives. En effet, cette approche permet de n'ajouter que deux balises et un unique déclencheur au conteneur Google Tag Manager dans sa version originelle. Tout en évitant la profusion d'éléments au sein de l'interface, elle permet de recenser la majeure partie des déclencheurs en un point unique, tout en garantissant l'exhaustivité de ce "plan de marquage" brut, tout élément ajouté à la balise étant de facto une des briques du plan de marquage d'ensemble. Par ailleurs, le recours à des déclencheurs externes au conteneur demeure possible avec une telle approche.</p>
+                    <p>La principale limite de cette organisation réside dans la nécessité pour les intégrateurs d'être en capacité de lire le langage JavaScript et de rédiger des codes basiques. Le niveau de connaissance nécessaire peut être atteint en une formation de quelques heures, ce qui fait de ce point un obstacle loin d'être insurmontable.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>La méthode de suivi des interactions, via un système de gestion des balises, pour laquelle opte une organisation doit dépendre du niveau de maturité de ses intégrateurs logiciels et équipes de développements. Bien que les outils de gestion des balises simplifient la mise en oeuvre des plans de marquage, leur usage soulève de nouvelles questions, auxquelles il s'avère indispensable de réfléchir le plus en amont possible afin de garantir un usage efficace de l'outil par ses utilisateurs finaux.</p>
+
+                    <div id='disqus_thread'></div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
