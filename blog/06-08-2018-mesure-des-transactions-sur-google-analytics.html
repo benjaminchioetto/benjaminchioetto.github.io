@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quand faut-il opter pour le mode amélioré ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Mesure des transactions sur Google Analytics - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Mesure des transactions sur Google Analytics</h1>
+                        <h2 class="subheading">Quand faut-il opter pour le mode amélioré ?</h2>
+                        <span class="meta">06 août 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Pour mesurer des conversions liées au commerce électronique, l'intégrateur de Google Analytics peut choisir de recourir au suivi e-commerce standard ou au contraire au mode amélioré. La question du choix de l'une ou de l'autre méthode ne se pose pas lorsque la mesure du taux d'ajout au panier, des impressions et clics sur les produits et promotions, ou encore le passage d'une étape à l'autre du tunnel de conversion sont des indicateurs figurant au sein du plan de marquage. En effet, seul le suivi e-commerce amélioré permet d'enregistrer une trace de telles interactions. Mais qu'en est-il pour les sites dont le plan de marquage s'avère plus simple ? Ceux pour lesquels le suivi des conversions proprement dit s'avère suffisant. Quel mode faut-il alors utiliser : le traditionnel, ou au contraire l'amélioré ?</blockquote>
+
+                    <h2 class="section-heading">Suivi e-commerce amélioré : un nouveau standard ?</h2>
+
+                    <p>La collecte de données e-commerce en mode amélioré a été introduite avec la bibliothèque JavaScript analytics.js sur le Web. Ce type de suivi est étroitement lié à l'aspect universel de Google Analytics. L'ancienne bibliothèque Web, ga.js, qui correspondait avec urchin.js à la version classique de Google Analytics, ne permettait pas de bénéficier d'une telle fonctionnalité. Comme toutes les fonctionnalités natives de Google Universal Analytics, le suivi e-commerce amélioré est compatible avec le protocole de mesure. Cela signifie qu'il existe deux syntaxes distinctes dédiées respectivement au suivi e-commerce simple et au e-commerce amélioré afin de transmettre des données à Google Analytics depuis un environnement serveur, une application ou tout autre dispositif à même d'exécuter des requêtes HTTP. Enfin, le SDK Google Analytics pour application, qui n'est désormais plus mis à jour, permet également de transmettre les données dans l'un ou l'autre mode.</p>
+                    <p>Les données transmises au format standard ou amélioré ne seront prises en compte, une fois réceptionnées par les serveurs de collecte de Google Analytics, qu'à la seule condition que l'intégrateur ait préalablement activé au niveau de la vue l'option correspondante. Le prérequis à la réception des données de commerce électronique amélioré est l'activation préalable dans l'interface du suivi électronique standard. Pourtant, sur le Web, la dernière version de la bibliothèque de collecte de données JavaScript de Google Analytics, gtag.js ne permet plus d'envoyer de données e-commerce en mode simple. Seul le mode amélioré a été conservé sur la version la plus moderne de l'outil de collecte de données de Google Analytics.<p>
+                    <p>Faut-il dès lors en déduire que le suivi simple n'a plus d'avenir et devrait être abandonné du fait de son obsolescence ?</p>
+
+                    <h2 class="section-heading">Suivi e-commerce simple : un mode de collecte et de traitement obsolète ?</h2>
+
+                    
+                    <p>Ce serait oublier que Google continue à collecter les données transmises par les bibliothèques JavaScript urchin.js et ga.js, bien qu'il ne les maintienne plus à jour depuis des années. Par ailleurs, le e-commerce simple n'a pas été retiré de l'interface, pas plus que les pages explicatives s'y rapportant, ce qui témoigne de la volonté de le faire perdurer.</p>
+                    <p>Sur le Web, la différence entre les deux méthodes, lorsqu'il s'agit de sauvegarder une transaction, ne saute pas aux yeux de prime abord. En effet, elles nécessitent toutes deux, en premier lieu, de charger un module externe à la bibliothèque JavaScript de base de Google Analytics. Baptisée ecommerce.js, la bibliothèque externe dédiée au suivi e-commerce simple pèse 828 bytes contre 1,4 kb pour le fichier ec.js du suivi e-commerce amélioré. La simplicité semble donc, de prime abord, être synonyme de légèreté. Cependant, cette assertion ne résiste pas à l'analyse de la méthode de transmission des données de l'une et de l'autre bibliothèque. En effet, tandis que les données de suivi amélioré nécessitent d'être transmises en "pièce jointe" à un autre hit qu'elles viennent compléter, qu'il s'agisse d'un événement, d'une page vue ou d'un appel de type social, les appels e-commerce simple ont quant à eux leur propre type d'appel, baptisés respectivement item et transaction. Par ailleurs alors, que les données de multiples produits peuvent être transmises avec un seul appel lorsqu'il est fait usage du mode e-commerce amélioré, la méthode simple nécessite quant à elle de lancer autant d'appels qu'il existe de produits uniques au sein de la transaction, sans compter celui dédié au suivi de l'achat proprement dit.</p>
+                    <p>Cela signifie qu'une transaction impliquant l'achat de deux produits distincts s'accompagnera de trois hits en mode simple, plus un quatrième correspondant à la page vue de la confirmation de commande, contre un unique appel pour le suivi e-commerce amélioré. Au-delà de cette problématique de performance, le suivi e-commerce simple impose une transmission des valeurs numériques se rapportant à la transaction au format hors taxe, sans quoi celles affichées dans les rapports de l'interface se trouveraient faussées, des calculs étant effectués préalablement à la création des rapports afin de regrouper le montant de la commande hors taxe avec les taxes. A l'inverse, les données numériques transmises en mode amélioré sont compartimentées. Il est donc possible pour l'utilisateur de transmettre des montants TTC s'il le souhaite.</p>
+                    <p>Le plus surprenant dans la comparaison entre les deux méthodes réside probablement dans l'absence d'écart significatif concernant le niveau d'informations transmis, pour tout ce qui se rapporte aux conversions proprement dites. S'il est juste de déclarer que recourir au suivi amélioré permet de collecter davantage d'informations au global, cela s'avère moins juste lorsque seul la mesure de l'acte d'achat est considérée.</p>
+   
+                    
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Le suivi e-commerce amélioré porte bien son nom. Il présente des avantages non négligeables qui le rendent incontournable, y compris lorsque la mesure du commerce électronique se limite aux seules transactions. Plus léger que son ancêtre, ce mode de suivi garantit un meilleur taux de transmission des informations, même si son implémentation, dans un système de gestion des balises autre que Google Tag Manager, peut s'avérer plus complexe du fait que ce mode de suivi vient se greffer sur des appels Google Analytics existants.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
