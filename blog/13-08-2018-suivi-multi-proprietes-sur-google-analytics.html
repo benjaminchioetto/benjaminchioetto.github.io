@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quel est le mode de paramétrage le plus efficace ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Suivi multi-propriétés sur Google Analytics - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Suivi multi-propriétés sur Google Analytics</h1>
+                        <h2 class="subheading">Quel est le mode de paramétrage le plus efficace ?</h2>
+                        <span class="meta">13 août 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Le suivi multi-propriétés est une problématique incontournable sur Google Analytics. S'il existe diverses raisons pouvant justifier de transmettre, sur une même page ou un même écran, des données à deux propriétés Google Analytics distinctes, les plus courantes demeurent la mesure des actions utilisateur au lendemain d'une refonte et la mise en oeuvre d'un plan de marquage sur l'ensemble des sites appartenant à une même entité, tout en préservant autant que possible les quotas de collecte octroyés par Google Analytics sur certaines propriétés. Dans de tels cas de figure, quel est le mode de paramétrage le plus efficace afin de mettre en oeuvre un suivi multi-propriétés ?</blockquote>
+
+                    <h2 class="section-heading">Les possibilités offertes par la bibliothèque JavaScript analytics.js</h2>
+
+                    <p>En dépit de l'introduction de la bibliothèque gtag.js en 2017, analytics.js demeure l'outil dédié à la collecte de données Google Analytics actuellement maintenu à jour le plus utilisé pour transmettre des informations à Google Analytics. Il n'est donc pas inutile de s'intéresser aux possibilités de paramétrage qu'il propose en terme de suivi multi-propriétés, d'autant plus qu'une telle fonctionnalité existait déjà sur l'ancienne bibliothèque JavaScript ga.js. Les développeurs de Google ont donc pu capitaliser sur le système historique des traceurs, à la fois simple et ingénieux, afin de proposer aux intégrateurs de multiples possibilités de paramétrage.</p>
+                    <p>Tout traceur créé peut se voir assigner un nom. Si une telle démarche demeure optionnelle lorsque la page n'abrite qu'un unique traceur, elle devient incontournable lorsqu'il est question de mettre en oeuvre un suivi multi-propriétés. En effet, toute demande de création d'un nouveau traceur, dont le nom serait identique à un traceur existant, est systématiquement rejetée par la bibliothèque analytics.js. Or, chaque traceur ne peut transmettre des données qu'à une unique propriété. Par conséquent, donner un nom à tous les traceurs créés après que le premier ait été initialisé sur la page s'avère indispensable dans une telle configuration.</p>
+                    <p>Bien qu'il puisse sembler logique, à première vue, de transmettre par défaut des données à l'ensemble des traceurs présents sur la page et d'offrir la possibilité en cas de besoin de ne le faire qu'à un ou plusieurs d'entre eux, les développeurs de Google ont pris le parti inverse. Par conséquent, un intégrateur devra impérativement exécuter trois commandes de type "send", chacune préfixée du nom du traceur approprié, s'il désire envoyer des données à différentes propriétés. Un tel exemple démontre que si assigner des noms à chaque traceur facilite leur identification, ainsi que les sessions de test, elle rend beaucoup plus ardue l'utilisation au quotidien de l'outil. Afin de contourner le problème, l'intégrateur peut recourir à trois approches distinctes.</p> 
+                    <p>La première consiste à créer une fonction javascript personnalisée, qui se chargera de transmettre aux différents traceurs les paramètres fournis lors de son appel. Simple à mettre en oeuvre, cette approche a pour défaut essentiel de nécessiter de devoir opter pour un mode de déclaration des paramètres de la fonction ga reposant sur l'usage systématique d'un objet, sous peine de devenir gérer les différents cas de figure liés au recours aux différents types d'appels Google Analytics, tels que les pages vues et les événements, et du nombre variable de paramètres qui en découle.</p>
+                    <p>La deuxième approche tire parti de la fonction getAll proposée de façon standard par analytics.js et qui permet d'itérer sur les différents marqueurs présents de sorte à leur transmettre à chacun une commande selon leur nom ou tout autre paramètre les constituants. A moins que le plan de marquage ne soit mis à jour par des utilisateurs disposant d'un profil technique, la plupart du temps, le recours à cette fonction sera masqué aux utilisateurs en étant directement intégrée au sein d'une fonction intermédiaire de traitement, comme cela était le cas dans la première méthode décrite.</p>
+                    <p>La troisième et dernière approche n'a vu le jour que très récemment avec l'introduction des tâches personnalisées, qui permettent de manipuler les données calculées par le kit de programmation JavaScript de Google avant leur envoi au point de collecte de Google Analytics. En initialisant une tâche personnalisée chargée de dupliquer les paramètres à transmettre à Google Analytics, après avoir changé l'identifiant de la propriété, il devient possible d'offrir une méthode de suivi multi-propriétés totalement transparente pour l'utilisateur final qui peut se contenter d'appeler une unique commande, rendant inutile la création de différents traceurs. Une fois encore cependant, la méthode présente des inconvénients. En effet, il s'avère extrêmement difficile de rédiger la tâche personnalisée de sorte à transmettre certains appels, mais pas d'autres, à une ou plusieurs propriétés clairement identifiées.</p>
+                    <p>Les méthodes natives et personnalisées ne donnant pas pleinement satisfaction, Google a revu sa copie lors de l'introduction de la bibliothèque gtag.js.</p>
+
+                    <h2 class="section-heading">Les possibilités offertes par la bibliothèque JavaScript gtag.js</h2>
+
+                    <p>Contrairement à analytics.js, gtag.js ne repose pas sur des traceurs, identifiés par des noms, pour transmettre des données au point de collecte Google Analytics. Le système de gtag.js repose sur les identifiants des propriété en tant que tels, spécifiés dans un objet de configuration, afin de gérer la transmission des données à une propriété donnée. L'usage d'un identifiant pour cibler une propriété, bien que pouvant sembler moins commode de prime abord, s'avère à l'usage limiter considérablement les risques d'erreur en rappelant constamment la destination des données transmises.</p>
+                    <p>Autre point différenciant majeur, gtag.js est conçu pour transmettre par défaut des informations à l'ensemble des propriétés Google Analytics ayant été initialisées. C'est un renversement complet de paradigme, en comparaison d'analytics.js, le suivi multi-propriété devenant de fait la norme et la transmission de données de façon différenciée l'exception.</p>
+                    <p>Pour finir, les équipes de Google ont rendu possible la définition de groupes de propriété. La bibliothèque offre ainsi la possibilité de transmettre tout aussi simplement des données à l'ensemble des propriétés déclarées, à un groupe plus restreint de propriétés, ou au contrainte à une seule d'entre elles, selon le bon vouloir de l'intégrateur.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Les possibilités nouvelles offertes par gtag.js en terme de suivi multi-propriétés, en comparaison du vieillissant analytics.js, rendent son utilisation incontournable à toutes les organisations ayant recours de façon intensive à la transmission simultanée de données vers plusieurs propriétés Google Analytics.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
