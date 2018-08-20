@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Le jeu en vaut-il la chandelle ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Balise HTML noscript et outils de mesure / gestion des balises - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Balise HTML noscript et outils de mesure / gestion des balises</h1>
+                        <h2 class="subheading">Le jeu en vaut-il la chandelle ?</h2>
+                        <span class="meta">20 août 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">A l'heure des applications Web progressives, des applications à page unique et alors même qu'un standard HTML simplifié tel que l'AMP fait usage du JavaScript, tandis que les plateformes de recueil du consentement utilisateur dépendent du JavaScript pour fonctionner et donc pour garantir une mise en conformité avec le RGPD, est-il nécessaire de continuer à se préoccuper des utilisateurs bloquant les codes JavaScript dans les domaines de la mesure d'audience et de la gestion des balises ? La balise noscript présente-t-elle encore un intérêt pour ce type de solutions logicielles ?</blockquote>
+
+                    <h2 class="section-heading">Ne pas confondre blocage du JavaScript et celui des publicités et traceurs</h2>
+
+                    <p>Bloquer l'exécution du JavaScript sur son navigateur revient à dégrader significativement son expérience utilisateur sur la quasi-totalité des sites Web actuels, y compris ceux dits statiques, c'est à dire ne reposant pas sur l'usage d'un CMS tel que Wordpress, Shopify ou encore Joomla pour fonctionner. En effet, ce langage est indispensable à l'animation des pages, notamment à la gestion de l'affichage/masquage de certains de leurs composants, mais aussi à la transmission d'informations sans rechargement des pages, sans oublier l'exécution d'outils comme ceux dédiés à la personnalisation ou encore au conseil client.</p>
+                    <p>La raison d'être des blocs noscript est de permettre de déclencher des codes HTML et CSS exclusivement en cas de blocage des codes JavaScript. Logiquement, il est impossible d'y inclure des codes JavaScript. Par ailleurs, la balise noscript n'est pas conçue pour détecter le blocage conditionnel de certaines ressources, lié au recours à un outil de blocage des publicités et/ou traceurs.</p>
+
+                    <h2 class="section-heading">La balise noscript, pierre angulaire du concept d'amélioration progressive sur le Web</h2>
+
+                    <p>Le recours au noscript répond donc en premier lieu à un enjeu de maintien de l'expérience utilisateur, bien qu'il soit possible de le détourner à des fins de collecte d'informations, en dépit de la désactivation du JavaScript, par l'utilisateur.</p>
+                    <p>Le recours intensif au JavaScript sur les sites modernes ne saurait suffire en elle-même à renoncer à l'usage de la balise noscript. S'en priver reviendrait pour ainsi dire à faire fonctionner un site Web à la manière d'un ascenseur et non comme un escalier mécanique. En cas de panne de l'un des composants moteur, ici le JavaScript, le dispositif dans son entier deviendrait alors inutilisable.</p>
+                    <p>La notion d'amélioration progressive appliquée au développement Web requiert qu'il soit tenu compte des capacités techniques de l'ensemble des utilisateurs, afin d'y apporter une réponse adaptée, ce qui est impossible sans la balise noscript. Ce faisant, il devient possible d'allier deux impératifs impérieux en apparence inconciliable, l'amélioration de l'expérience utilisateur ET la maîtrise des coûts de développement.</p>
+
+                    <h2 class="section-heading">L'amélioration progressive, un concept transposable aux systèmes de mesure et de gestion des balises ?</h2>
+
+                    <p>Le blocage de la version JavaScript des outils de gestion des balises peut avoir une énorme incidence sur l'expérience utilisateur. Cependant, déployer une version noscript de tels outils ne constitue pas un palliatif efficace à ce blocage, car elle permet uniquement l'appels de ressources telles que des iFrames ou des images.</p>
+                    <p>Le cas des outils de mesure est différent, puisque l'exécution de leurs codes JavaScript a dans l'écrasante majorité des cas pour finalité l'appel d'une image invisible. Bien qu'il ne soit pas possible de transmettre l'intégralité des données qui auraient pu l'être au moyen de la bibliothèque JavaScript, un volume conséquent de données peut donc être envoyé par leur intermédiaire.</p>
+                    <p>Cependant, le déploiement d'outils de mesure directement au sein du code source des pages étant devenu l'exception, tandis que le recours aux systèmes de gestion des balises est de fait devenu la règle, trancher la question d'un recours ou non à la balise noscript pour les outils de mesure revient à se poser la même question, mais pour les outils de gestion des balises.</p>
+                    <p>Afin de fonctionner, ceux-ci requièrent que lors de l'intégration d'une balise dans leur interface, une version noscript, autrement dit une url, soit indiquée. Il est possible de renseigner des valeurs dynamiques au sein de cette url. Afin d'être récupérées et assignées aux bonnes balises, l'url noscript de l'outil de gestion des balises, qui est une page HTML à part entière chargée au moyen d'une balise HTML iframe, doit contenir les différentes valeurs constituant la couche de données sous la forme de paramètres GET.</p>
+                    <p>Dans la mesure où il est impossible à un code exécuté côté serveur de déterminer par lui seul si l'utilisateur a ou non activé le JavaScript, il faudra impérativement inclure au sein du code source de l'ensemble des pages, à deux reprises, l'intégralité du contenu de la couche de données. L'impact sur le poids des pages, les performances serveur ou encore la consommation de bande passante de l'utilisateur est donc non négligeable.</p>
+
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Le recours à la balise noscript dans le cadre de l'installation d'outils de mesure et de gestion des balises ne peut relever du concept d'amélioration progressive. En effet, l'impact sur l'expérience utilisateur, d'une telle mise en oeuvre, s'avère nul. Déployer et maintenir une version noscript de ces outils s'avère onéreux et ne permet pas d'obtenir un bénéfice comparable à celui offert par leur version JavaScript, tandis que seule une portion infime des utilisateurs peut en bénéficier. Dans ce contexte, le recours au noscript pour déployer des outils de gestion des balises et de mesure semble donc à proscrire, ou tout du moins à limiter fortement.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
