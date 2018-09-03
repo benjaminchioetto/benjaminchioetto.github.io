@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quelle est la méthode la plus efficace ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Récupérer et transmettre les tests et personnalisations actifs sur une page - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Récupérer et transmettre les tests et personnalisations actifs sur une page</h1>
+                        <h2 class="subheading">Quelle est la méthode la plus efficace ?</h2>
+                        <span class="meta">03 septembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Tous les outils de tests A/B et de personnalisation proposent une interface de programmation JavaScript permettant de lire sur une page donnée, l'ensemble des expérimentations et scénarios actifs. Stockées dans une variable, le plus souvent un tableau ou un objet, ces informations peuvent être transmises à des systèmes tiers, tels que les outils de mesure d'audience, afin d'analyser l'impact des modifications effectuées sur le comportement des utilisateurs. Dans les faits, cela ne s'avère pas toujours simple.</blockquote>
+
+                    <h2 class="section-heading">Pourquoi la transmission des données n'est pas toujours une sinécure</h2>
+
+                    <p>Transmettre les données générées par l'outil de tests A/B et de personnalisation A, vers le système de collecte et de stockage de données B, au moyen d'un code JavaScript C implique que C s'exécute une fois que les codes JavaScript de l'outil A ont initialisé la variable stockant les données du test. Il existe donc un lien de dépendance de C vis à vis de A. </p>
+                    <p>Dans le cas où l'outil de test A/B est appelé directement au sein du code source d'une page Web, dans la balise head, selon une méthode synchrone, la question d'un possible chargement de C avant A ne se pose pas. En revanche, si les deux codes se trouvent déployés de façon asynchrone, par exemple par un outil de gestion des balises, la question du chaînage des traitements se pose.</p>
+                    <p>Outre l'ordre d'exécution des codes, se pose la question de la méthode de transmission des informations. En effet, il peut arriver que C ait besoin que la donnée transmise par A lui soit remise AVANT que son code JavaScript principal ne soit exécuté, ce qui engendre un nécessaire décalage dans l'exécution des codes et donc comme effet de bord une déperdition dans le volume de données transmises. Par ailleurs, interfacer manuellement A et C nécessite de disposer d'un niveau minimum de compréhension du JavaScript, ce qui n'est pas le cas de toutes les personnes responsables de l'intégration de ces outils.</p>
+
+                    <h2 class="section-heading">La réponse des éditeurs de logiciels de tests A/B et de personnalisation</h2>
+
+                    <p>Afin de satisfaire leurs utilisateurs et de simplifier la connexion entre leur outil et des systèmes tiers, les éditeurs de logiciels de tests A/B et de personnalisation ont mis en oeuvre des connecteurs natifs avec des outils tiers. Paramétrables lors de la création d'un test ou de l'activation d'un compte, ils permettent via une interface simplifiée ne nécessitant pas de manipuler du code de construire une passerelle entre les outils. Il existe plusieurs limites à cette approche.</p>
+                    <p>Tout d'abord, l'outil A ne tient pas toujours compte de l'état d'avancement du chargement de l'outil C. Dans le pire des cas, la tentative de transmission d'information peut conduire à une erreur JavaScript. Plus pernicieux, un échec de la transmission des données peut très bien ne s'accompagner d'aucun signal ou message d'erreur, si l'outil A intègre un mécanisme de vérification de la présence de l'outil C ou encore transmet les données après le chargement initial de C, ce qui les rend inexploitables par certains éditeurs logiciels.</p>
+                    <p>Enfin, les possibilités de paramétrage offertes peuvent parfois s'avérer limiter. Prenons l'exemple d'un outil C qui serait Google Analytics. La transmission de données peut s'effectuer de deux manières principales, potentiellement complémentaires : via un événement et/ou une dimension personnalisée. Si seule la dimension personnalisée est utilisée, il existe un risque que le code Google Analytics ne soit pas encore chargé et donc qu'elle ne puisse pas être définie, ou encore que l'appel de type page vue ait été envoyé avant que cette donnée ne soit transmise. Si l'intégration passe par un événement, l'impact sur le quota d'utilisation de Google Analytics dans sa version gratuite pourrait être non négligeable. Même si l'outil A documente précisément la méthode de communication avec C, reste que le connecteur standard peut ne pas toujours répondre aux attentes de l'intégrateur.</p>
+
+                    <h2 class="section-heading">Les approches alternatives</h2>
+                    <p>Il est possible de garantir la bonne marche de la jonction entre A et C, si tous deux sont chargés par un outil de gestion des balises, en conditionnant le chargement de C à la complète exécution de A. Alternativement, C peut être mis en oeuvre via le bloc JavaScript personnalisé inclus dans les outils de tests A/B. Cela a cependant pour principal inconvénient dans un cas comme dans l'autre de retarder considérablement le chargement de C.</p>
+                    <p>Il serait envisageable de stocker les tests et personnalisations activées sur la première page chargée puis de les transmettre à l'outil dès la deuxième page et ainsi de suite sur les pages chargées ultérieurement. Ce faisant, la dépendance de C à A, dans son cycle de chargement, est évacuée, mais cela se fait au prix d'un décalage dans les données collectées de près d'une page.</p>
+                    <p>Au final, l'approche la moins dommageable et la plus efficace, consiste à déclencher via un code JavaScript inclus dans l'outil A, un appel à l'outil C, le plus tôt possible. A cette occasion, il devient possible de vérifier l'état du chargement d'un outil C, qu'il soit en cours, non débuté ou encore finalisé, puis de décider de l'opération la plus adéquate pour chacun de ces cas de figure. Ce faisant, l'intégrateur bénéficie du meilleur compromis possible entre l'envoi des données relatives aux tests et le chargement des codes des outils tiers.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>La possibilité de recourir à un connecteur natif afin de transmettre les données relatives aux tests et personnalisations actifs sur une page donnée est extrêmement intéressante, mais ne permet pas de répondre aux défis techniques liés à l'ensemble des méthodes d'implémentation d'un outil de tests A/B ainsi que des outils tiers auxquels il convient de le connecter. C'est pour ces raison, que le recours au bloc JavaScript personnalisé de l'outil de tests A/B, permettant l'exécution de codes directement par son intermédiaire, constitue la méthode la plus souple et efficace disponible à ce jour.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
