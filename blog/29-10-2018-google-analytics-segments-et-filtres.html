@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Deux fonctionnalités intercheangeables ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Google Analytics : segments et filtres - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Google Analytics : segments et filtres</h1>
+                        <h2 class="subheading">Deux fonctionnalités intercheangeables ?</h2>
+                        <span class="meta">29 octobre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Les filtres et les segments constituent deux fonctionnalités incontournables pour tout utilisateur souhaitant prendre connaissance des données stockées au sein des bases de données de Google Analytics, que cela soit au moyen des rapports prédéfinis disponibles au sein de l'interface Web, de rapports personnalisés, ou encore de tableaux de bord construits dans des outils tiers. Bien que des fonctionnalités aux libellés similaires puissent exister dans d'autres outils, elles présentent des caractéristiques uniques au sein de ce logiciel. Pour cette raison, elles méritent que leurs spécificités et particularités soient exposées. Par ailleurs, la distinction entre les deux fonctionnalités n'est pas nécessairement évidente pour les néophytes. Une raison supplémentaire de les présenter toutes deux en détail.</blockquote>
+
+                    <h2 class="section-heading">Les filtres : pour restreindre les données visualisées</h2>
+
+                    <p>La découverte des filtres s'effectue le plus souvent lors de l'utilisation de l'interface Web de Google Analytics. Répondant à un besoin immédiat et s'avérant d'un usage des plus intuitif, la compréhension de leur mode de fonctionnant va de soi. Permettant au moyen de conditions inclusives ou exclusives de restreindre les données affichées dans un rapport ou retournées par une requête, les filtres peuvent pourtant être source de confusion.</p>
+                    <p>En premier lieu, parce qu'il existe une fonctionnalité similaire, au sein de l'interface d'administration de Google Analytics, au niveau des vues. Permettant d'appliquer des traitements sur les données avant la construction des tables de données pré-calculées de la vue concernée, ils rendent possible l'inclusion, l'exclusion, ou encore la modification des données via de multiples types de critères. Sans aucun rapport avec la consultation proprement dite des données à l'occasion d'une analyse, cette possibilité de paramétrage est malgré tout désignée par le terme "filtre".</p>
+                    <p>Pour cette raison, les références aux filtres Google Analytics, peuvent être génératrices de confusion si des éléments de contexte insuffisants sont fournis. En résumé, les filtres applicables à la volée sur les données récupérées au moyen de l'interface de programmation dédiée à la construction de rapports, ou encore celle liée aux entonnoirs multi-canaux, sont inclusifs ou exclusifs et cumulables, ils sont alors interprétés avec l'opérateur logique ET. Plus important encore, ils ne peuvent être appliqués qu'aux statistiques et dimensions directement retournés par l'exécution d'une requête visant à extraire des données.</p>
+
+                    <h2 class="section-heading">Les segments : pour suivre le comportement de sous-ensembles de l'audience globale</h2>
+
+                    <p>La segmentation d'un ensemble de données peut renvoyer à deux pratiques clairement distinctes. D'une part la restriction des données affichées à un sous-ensemble de population, les dimensions et statistiques récupérées au moyen d'une requête ne faisant pas nécessairement partie des critère de segmentation. D'autre part, l'ajout d'une ou de plusieurs dimensions afin d'augmenter le niveau de granularité des analyses proposées sur les statistiques récupérées à l'origine. En pratique, dans Google Analytics, les segments rendent possible uniquement la première approche, la seconde étant réalisable via la modification de dimensions existantes ou l'ajout de dimensions supplémentaires.</p>
+                    <p>Les segments de Google Analytics peuvent être partagés entre des vues auxquelles un même utilisateur ou une même organisation a accès, ou partagés d'un utilisateur de la plateforme à un autre. Les segments ne peuvent se cumuler, contrairement aux filtres. Cependant, il est possible d'en comparer jusqu'à quatre simultanément. Grâce à eux, un utilisateur peut spécifier, au moyen de conditions inclusives ou exclusives, des critères avancés sur n'importe quelle statistique ou dimension de l'interface de programmation dédiée à la construction de rapports. Les segments rendent ainsi possible l'analyse de sous-ensembles de l'audience globale.</p>
+                    <p>Applicables au niveau session, ou utilisateur dans une limite de 90 jours glissants par rapport à la date de départ et ne concernant que les 1000 premières sessions enregistrées d'un utilisateur, ils peuvent être transformés en audiences, afin d'être partagés vers d'autres produits Google, notamment Google Ads à des fins de remarketing.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Les filtres et les segments constituent deux fonctionnalités complémentaires permettant de consulter les données Google Analytics en les restreignant aux seules informations jugées pertinentes par un utilisateur, dans un contexte d'analyse donné. Non interchangeables, elles se complètent avantageusement à condition d'avoir conscience de l'impact réel du recours à l'une ou l'autre de ces fonctionnalités, afin d'éviter tout risque d'erreur au cours des analyses découlant de leur utilisation.</p>
+                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
