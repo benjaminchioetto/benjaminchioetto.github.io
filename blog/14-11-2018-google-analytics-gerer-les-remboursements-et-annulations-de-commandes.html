@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Passage en revue des méthodes disponibles">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Google Analytics : gérer les remboursements et annulations de commandes - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Google Analytics : gérer les remboursements et annulations de commandes</h1>
+                        <h2 class="subheading">Passage en revue des méthodes disponibles</h2>
+                        <span class="meta">14 novembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Pour tout e-commerçant, la gestion des remboursements liés aux annulations de commandes ou encore au retour d'une partie ou de la totalité des produits les constituant, fait partie du quotidien. Gérés nativement par les systèmes de traitement des contenus spécifiquement conçus pour les sites de commerce électronique, ou encore par les outils de facturation, il n'en va pas de même pour Google Analytics. L'impossibilité de modifier la plupart des données collectées à posteriori de leur enregistrement, explique cet état de fait. Pourtant, il existe bien des méthodes permettant de redresser les données disponibles dans l'outil, y compris à posteriori, afin qu'elles s'avèrent cohérentes avec celles disponibles dans les logiciels précédemment cités. Que faut-il en penser ?</blockquote>
+
+                    <h2 class="section-heading">Distinguer correction et remboursement</h2>
+
+                    <p>La correction est un palliatif aux lacunes de Google Analytics, largement perfectible bien que documenté par Google, qui consiste à transmettre des informations en miroir de celles initialement collectées, se rapportant à une transaction donnée. Concrètement, il s'agit, au moyen du protocole de mesure Google Analytics, ou par l'intermédiaire de codes JavaScript, d'envoyer des données aux serveurs de Google Analytics avec des montants négatifs, de sorte à venir corriger, celles enregistrées lors de la commande.</p>
+                    <p>A l'inverse, un remboursement, qui peut être partiel ou total, a pour finalité de venir alimenter des statistiques spécifiques, telles que le nombre de transactions associées à un remboursement, la valeur des remboursements effectués, etc. Ces statistiques se rapportent tout autant aux produits qu'aux transactions. Cette fonctionnalité ne peut être mise en œuvre qu'au moyen d'un import de données, contrairement aux corrections de transactions.</p>
+                    <p>Séduisantes en apparence, du fait de leur simplicité de paramétrage et leur apparente souplesse, ces deux méthodes ne sauraient être qualifiées de satisfaisantes pour plusieurs raisons.</p>
+
+                    <h2 class="section-heading">Des artifices qui peinent à masquer une absence totale de rétroactivité des traitements</h2>
+
+                    <p>Les corrections tout d'abord, si elles ont l'avantage de pouvoir être appliquées tout autant aux transactions enregistrées au moyen du suivi du commerce électronique standard, qu'amélioré, présentent l'énorme inconvénient d'être décorrélées d'un point de vue chronologique, de la date à laquelle la transaction originale avait été enregistrée.</p>
+                    <p>Ainsi, si l'utilisateur procède à une correction Y le premier février, portant sur une commande X enregistrée le premier janvier, il s'avérera nécessaire, afin d'afficher un montant correct, pour l'utilisateur final des données, de sélectionner une plate de date s'étendant du premier janvier au premier février. Dans le cas contraire, le montant total affiché serait soit positif, soit négatif.</p>
+                    <p>En effet, les diverses informations transmises demeurent en silo, aucun retraitement de la transaction de base n'ayant été réalisé. Par ailleurs, puisque les corrections sont techniquement parlant des transactions à part entière, bien qu'elles utilisent un identifiant précédemment enregistré, elles conduiront à augmenter le volume total de transactions et de produits achetés sur la période considérée, rendant par la même toute exploitation des indicateurs concernés particulièrement difficile.</p>
+                    <p>Bien qu'exploitable uniquement sur des vues faisant usage du suivi du commerce électronique amélioré, le remboursement présente l'énorme avantage, en contrepartie, de ne pas augmenter le volume total de transactions ou de produits sur la période considérée, mais plutôt d'ajouter des informations supplémentaires dans des statistiques spécifiques. Un remboursement peut être traité par Google Analytics à condition que la commande concernée ait été enregistrée au cours des six derniers mois.</p>
+                    <p>Malheureusement, les données relatives aux remboursements sont disponibles uniquement à la date à laquelle l'import a été réalisé. De ce fait, une fois encore, les données consultées sont rendues disponibles sur une période n'ayant aucun rapport avec celle à laquelle la transaction de base avait été enregistrée, ou encore le moment où la demande de remboursement avait été émise, ou traitée.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Les méthodes proposées par Google Analytics afin de gérer l'importation de données relatives aux remboursements et annulations de commandes, qu'ils soient partiels ou intégraux, sont perfectibles, car elles ne permettent pas de retraiter les données précédemment collectées, tout au plus permettent-elles de les compléter. Dès lors, l'analyste se voit contraint d'élargir la période temporelle considérée, dans le cadre de ses investigations, afin d'intégrer les données transmises à posteriori. Les stratégies de contournement détaillées par Google, à savoir un envoi quotidien de données à Google Analytics, ou encore le recours à la fonctionnalité d'annotation, ne sauraient être qualifiées de pleinement satisfaisantes.</p>
+                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
