@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Une solution miracle ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Recourir au HSTS lors du déploiement du protocole HTTPs - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Recourir au HSTS lors du déploiement du protocole HTTPs</h1>
+                        <h2 class="subheading">Une solution miracle ?</h2>
+                        <span class="meta">18 novembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Les précautions indispensables à prendre en cas de mise en œuvre du protocole HTTPs sur un site, vis à vis des outils de collecte de données, ont déjà été exposées dans un <a href="https://www.benjaminchioetto.fr/blog/17-09-2018-outils-de-mesure-et-migration-https.html" target="_blank">précédent article</a>. Cependant, n'y était pas présentée une politique de sécurité Web, baptisée HTTP Strict Transport Security, qui peut grandement faciliter le travail des équipes mobilisées afin de rendre la communication des ressources constitutives d'un site Web totalement sécurisée. Peut-on pour autant qualifier, le HSTS, de solution miracle aux différents problèmes soulevés par une migration vers le protocole HTTPs ?</blockquote>
+
+                    <h2 class="section-heading">Principe de fonctionnement du HSTS</h2>
+
+                    <p>Le HSTS est une directive de sécurité définie par un serveur, à tout client cherchant à établir une connexion avec lui de façon sécurisée ou non sécurisée, dans l'en-tête de la réponse à la toute première requête émise. Cette instruction ne pouvant être transmise qu'au sein d'une réponse communiquée en HTTPs, son usage se limite de facto aux navigateurs supportant ce protocole. Une durée de vie est systématiquement associée à la directive, la rendant de fait inopérante après un certain laps de temps.</p>
+                    <p>La finalité du HSTS est de forcer tout navigateur auquel elle aurait été transmise, à établir des connexions avec le serveur, exclusivement en utilisant le protocole HTTPs. Il s'agit donc d'un complément idéal à une règle de redirection générale, qui serait paramétrée au niveau des fichiers de configuration du serveur, ou au sein d'un fichier htaccess et qui viserait à rediriger l'ensemble des utilisateurs d'un dispositif Web vers sa version sécurisée.</p>
+                    
+                    <h2 class="section-heading">HSTS et optimisation de la performance</h2>
+
+                    <p>Ces deux approches distinctes, redirection serveur d'une part et HSTS d'autre part, répondent à une même problématique, mais de façon différente. Dans le premier cas, le serveur est en charge de rediriger l'utilisateur vers une version sécurisée de la ressource demandée, tandis que dans le second cas, la demande de téléchargement d'une ressource de façon sécurisée est directement gérée par le navigateur. Les deux fonctionnalités ne font donc pas doublon.</p>
+                    <p>Le HSTS est indubitablement le grand gagnant, du strict point de vue de l'optimisation de la performance. En effet, le serveur, plutôt qu'avoir à générer une redirection 301 après qu'une ressource ait été appelée au moyen du protocole HTTP en plus d'assurer la livraison de ladite ressource, lorsque le HSTS n'est pas utilisé, pourra se contenter en cas d'activation de cette fonctionnalité, d'envoyer directement de façon sécurisée l'information demandée à son requérant.</p>
+                    <p>Outre une moindre sollicitation des serveurs, le HSTS permet de garantir que les ressources demandées seront plus rapidement téléchargées, car il n'y aura, de fait, plus aucune redirection suite au chargement de la première ressource retournée en HTTPs, avec laquelle la directive HSTS aura été définie. Enfin et c'est probablement le plus fondamental, il n'y aura aucune transmission des données, du client vers le serveur, de façon non sécurisée, contrairement à ce qu'il se serait produit dans le cas où seules des redirections gérées côté serveur auraient été paramétrées.</p>
+
+                    <h2 class="section-heading">HSTS et référencement naturel</h2>
+
+                    <p>Quel est l'impact, dans les faits, du HSTS sur le référencement naturel ? Le HSTS permet de réduire les redirections 301 liées à l'envoi d'une ressource en version HTTPs et non HTTP, uniquement à la première ressource transmise à un navigateur, durant le laps de temps où la directive HSTS demeure valide.</p>
+                    <p>Certains navigateurs, comme Google Chrome, associent dans l'onglet réseau des outils pour développeurs, les requêtes sécurisées émises grâce au HSTS au code HTTP 307. Il s'agit d'une convention, permettant d'identifier les requêtes ayant été automatiquement réécrites en HTTPs, avant émission par le navigateur. Cependant, l'information affichée n'est pas représentative du code de réponse envoyé par le serveur, qui sera systématiquement un code 200. La longueur de la réponse associée à cette 307, de 0 byte, est caractéristique de cette redirection 307 factice, qui n'est en réalité qu'un substitut. Certains outils, tels que la Search Console de Google, choisissent d'identifier les appels effectués suite à la réception d'une directive HSTS, comme des 301.</p>
+                    <p>Ainsi, le HSTS est bénéfique du point de vue du référencement naturel, car il permet de garantir qu'aucune ressource ne sera distribuée de façon non sécurisée, évitant par là même tout risque de duplication des contenus entre une version sécurisée et non sécurisée d'un site, sans oublier le léger bonus induit par la mise à disposition d'une version sécurisée de son site.</p>
+
+                    <h2 class="section-heading">HSTS et outils de gestion des balises et de collecte de données</h2>
+                    <p>L'activation du HSTS, à l'occasion de la migration vers le protocole HTTPs, permet de garantir une absence totale d'interruption d'exécution des outils de gestion des balises, dont les fichiers seraient hébergés en propre, directement sur un domaine appartenant au propriétaire du site Web concerné par le déploiement du protocole sécurisé.</p>
+                    <p>En effet, il peut arriver que les équipes techniques omettent de changer le protocole spécifié dans le code source des pages, afin d'appeler les conteneurs de façon sécurisée. Bien que des redirections Web soient paramétrées simultanément à l'introduction du HSTS et qu'elles garantissent la mise à disposition de la version sécurisée des conteneurs, évitant par là même leur blocage par le navigateur, elles ne peuvent le faire qu'après une redirection. Autrement dit, en l'absence du HSTS, un décalage dans le chargement des conteneurs, d'une durée variable, mais nécessairement préjudiciable au volume de données collectées, s'avérerait incontournable.</p>
+                    <p>Quid des outils de collecte de données dont les points de collecte et les fichiers nécessaires au bon fonctionnement seraient hébergés en dehors des domaines concernés par la migration vers le protocole HTTPs ? Le HSTS s'avère impuissant, à réécrire les requêtes à destination de domaines autres que celui où se trouvait le serveur l'ayant définie. Cette directive de sécurité ne permet donc pas de s'assurer que des données continueront à être transmises à l'ensemble des partenaires, si leurs ressources JavaScript et pages Web chargées via des iFrame, devaient continuer à être appelés de façon non sécurisée après la migration du site.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>La directive de sécurité HSTS est un complément incontournable aux redirections mises en œuvre par les serveurs, assurant le bon fonctionnement d'un site concerné par une migration du protocole HTTP vers le protocole HTTPs. Utile du point de vue de la sécurité, du référencement naturel et de la performance, cette fonctionnalité ne peut cependant garantir à elle seule une continuité totale de la collecte de données, ayant lieu sur le site Web concerné par la migration, à destination de domaines tiers.</p>
+                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
