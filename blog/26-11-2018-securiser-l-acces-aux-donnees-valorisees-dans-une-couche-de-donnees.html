@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Est-ce possible ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Sécuriser l'accès aux données valorisées dans une couche de données - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Sécuriser l'accès aux données valorisées dans une couche de données</h1>
+                        <h2 class="subheading">Est-ce possible ?</h2>
+                        <span class="meta">26 novembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Lors de l'installation d'un outil de gestion des balises, durant la phase d'expression de besoins, les utilisateurs finaux de l'outil, qu'ils soient directs ou indirects, précisent leurs attentes et exigences opérationnelles. Il est de la responsabilité de l'équipe en charge de l'implémentation, plus spécifiquement des consultants experts dudit outil, de transformer en un plan de marquage le matériau brut collecté à cette occasion. A ce stade, l'essentiel des efforts porte sur le choix des libellés des variables, leur périmètre, ou encore sur la définition des informations à inclure dans la couche de données. En revanche, la question du contrôle de l'accès aux données s'y trouvant déversées, est rarement abordée. Pourtant, des données personnelles sont couramment fournies, via leur couche de données, aux outils de gestion des balises. Est-il possible d'en contrôler l'accès ?</blockquote>
+
+                    <h2 class="section-heading">Rappels concernant la nature des couches de données</h2>
+
+                    <p>Sur le Web, les couches de données servant à alimenter les conteneurs des outils de gestion des balises sont des objets JavaScript. Il peut s'agir de tableaux associatifs, ou encore de tableaux simples dans lesquels des objets sont poussés. En fonction du mode de fonctionnement de l'outil de gestion des balises, le modèle de données, c'est à dire les différentes variables utilisables par l'outil de gestion des balises, sera plus ou moins éloigné des informations transmises via la couche de données.</p>
+                    <p>Dans tous les cas, les informations envoyées initialement au conteneur demeurent accessibles, en interrogeant la variable JavaScript au sein de laquelle elles ont été déversées. Pour certains outils, cette permanence de l'information est un prérequis, car la couche de données ne fait qu'un avec le modèle de données. Pour d'autres, il ne s'agit que d'un moyen de faciliter les vérifications et recettes effectuées par les intégrateurs, qui ne constitue pas un prérequis au bon fonctionnement technique du logiciel de gestion des balises.</p>
+                    <p>Toujours est-il, que dans un cas comme dans l'autre, ces informations demeurent lisibles par tout code JavaScript exécuté sur la page, qu'il soit ou non déployé par l'outil de gestion des balises. Or, même si certains outils de gestion des balises proposent une option permettant de personnaliser le nom de l'objet JavaScript faisant office de couche de données, cette option demeure très peu usitée. Autrement dit, il s'avère d'une simplicité enfantine, pour un code rédigé par un tiers, de récupérer l'ensemble des informations stockées au sein d'une couche de données et ce de façon totalement automatisée.</p>
+                    <p>Dans ce contexte, quelles stratégies peuvent-être mises en œuvre afin de limiter au maximum le risque de fuite de données se trouvant stockées au sein de la couche de données ?</p>
+                    
+                    <h2 class="section-heading">Des mesures incontournables simples à mettre en œuvre</h2>
+
+                    <p>Les couches de données contiennent des informations personnelles et non personnelles. Ajouter des informations personnelles, au sein d'une couche de données, sur un site n'employant pas le protocole HTTPs, présente un risque trop élevé d'interception desdites données par un tiers. L'activation du chiffrage des communications, lors de l'envoi de données personnelles à un outil de gestion des balises n'est donc pas un paramétrage optionnel. En plus de la mise en œuvre du protocole HTTPS, l'ajout de la directive de sécurité HSTS, afin de limiter le risque de fuite des données vers des tiers non identifiés, fait partie des paramétrages indispensables.</p>
+                    <p>En outre, renommer la couche de données afin de ne pas utiliser le libellé par défaut fourni par l'éditeur de l'outil de gestion des balises, lorsque cela est possible, sera fortement recommandé. Par ailleurs, il faudra éviter dans la mesure du possible d'utiliser des libellés de variables trop transparents, c'est à dire pouvant être aisément compris par des tiers.</p>
+                    <p>Pour ce faire, l'usage de valeurs alphanumériques générées aléatoirement, couplé à un tableau de correspondance connu des seuls utilisateurs de l'outil de gestion des balises, permettra d'augmenter le niveau de confidentialité des données fournies. Ces mesures simples, bien qu'elles permettent de limiter le risque d'accès non autorisés à la couche de données, ne le supprime pas pour autant. Heureusement, il existe des paramétrages complémentaires permettant de juguler, dans certains cas de figure, le manque de sécurisation des données figurant au sein de la couche de données.</p>
+
+                    <h2 class="section-heading">Des paramétrages facultatifs plus complexes, mais précieux</h2>
+
+                    <p>Pour les outils dont la couche de données est un tableau abritant des tableaux associatifs, une purge des contenus stockés en son sein, peu après leur envoi et leur assimilation par le modèle de données, permettra de diminuer significativement le risque d'accès non autorisés aux données en question.</p>
+                    <p>Concernant les données personnelles, leur transmission au système de gestion des balises ne devra pas s'effectuer via la couche de données, pour les raisons précédemment évoquées. Il s'avérera nécessaire d'effectuer une requête sécurisée vers un programme hébergé directement sur un domaine géré par l'organisation ayant inclus l'outil de gestion des balises sur ses pages, de sorte à récupérer en réponse à cette demande, les informations personnelles sensibles, puis de les ajouter immédiatement au modèle de données.</p>
+                    <p>Émise par un code embarqué au sein de l'outil de gestion des balises, cette requête décale certes la récupération des informations APRES le chargement initial du conteneur, mais en contrepartie, en rend la définition et le stockage significativement plus sécurisés sur les outils dont l'accès au modèle de données est impossible pour des codes autres que ceux de l'outil de gestion des balises proprement dit.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Bien qu'elle puisse rendre l'implémentation, le maintien et l'usage quotidien d'un outil de gestion des balises contraignant, la sécurisation des données contenues au sein de la couche de données s'avère indispensable. La mise en œuvre des mesures détaillées dans cet article peut permettre d'atteindre cet objectif, bien qu'en contrepartie l'usage de l'outil de gestion des balises puisse s'en trouver complexifié.</p>
+                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
