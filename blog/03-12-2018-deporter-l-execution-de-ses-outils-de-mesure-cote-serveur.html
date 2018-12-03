@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Quand, comment, pourquoi ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Déporter l'exécution de ses outils de mesure côté serveur - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#services">Offre de services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#portfolio">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#outil">Outils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#rates">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#team">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Déporter l'exécution de ses outils de mesure côté serveur</h1>
+                        <h2 class="subheading">Quand, comment, pourquoi ?</h2>
+                        <span class="meta">03 décembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Bloqueurs de publicité et/ou de traceurs, blocage intelligent du suivi sur les navigateurs, restrictions au niveau des cookies tiers, données de user agent simplifiées transmises par les navigateurs, voici quelques uns des systèmes pouvant conduire à diminuer significativement le volume de données collectées côté client, sans compter les biais inhérents à une transmission de données directement depuis l'appareil d'un utilisateur. Déporter les processus de collecte et de transmission d'informations, côté serveur, constitue une réponse possible à ces multiples problèmes. Faut-il se laisser tenter ?</blockquote>
+
+                    <h2 class="section-heading">Rappels concernant les biais inhérents à une collecte de données côté client</h2>
+
+                    <p>Au delà du recours à des systèmes de blocage, qui relève d'un choix plus ou moins conscient de l'utilisateur d'un site Web ou d'une application, les seuls modes d'usage de l'applicatif logiciel peuvent influer considérablement, bien que les usagers n'en aient pas conscience, sur le volume de données collectées.</p>
+                    <p>La connexion à un service en itinérance est l'un des principaux facteurs de déperdition d'informations. En effet, si les applications sont capables de stocker directement sur le dispositif concerné les informations devant être transmises, de même que les applications Web progressives, une fois la connexion internet récupérée, il n'en va pas de même pour les navigateurs. Ainsi, en cas de bande passante insuffisante afin de traiter l'ensemble des requêtes entrantes et sortantes, les outils de mesure s'avéreront le plus souvent totalement inopérants.</p>
+                    <p>Autre cas courant sur le Web, bien que l'usage progressif de la méthode sendBeacon permette en partie d'en limiter les conséquences, l'absence d'envoi de données en cas de consultation trop rapide d'une page, ou d'interaction avec un élément de navigation.</p>
+                    <p>Autre explication possible à une absence de collecte d'informations, toute aussi forte cette fois sur le Web que sur application, l'obsolescence technologique du logiciel utilisé afin d'accéder à un service. Il peut s'agir tout autant d'un navigateur, que d'un système d'exploitation sur mobile ou tablette, qui pourra potentiellement rendre totalement inopérant un système de mesure.</p>
+                    <p>Les gestionnaires de sites et d'applications n'ayant aucun moyen réellement efficace à leur disposition afin de résoudre les problèmes listés ci-dessus, tout au plus peuvent-ils inciter les utilisateurs à renoncer à un navigateur obsolète ou à un système de blocage mais sans garantie de résultats. Dès lors, ne vaut-il pas mieux pour eux se reposer sur des systèmes s'exécutant côté serveur et abandonner définitivement la collecte de données côté client ?</p>
+                    
+                    <h2 class="section-heading">Collecte de données côté serveur : un moyen complexe et coûteux de compléter celle s'effectuant côté client</h2>
+
+                    <p>Pour mettre en oeuvre des systèmes de recueil, de transmission et d'enregistrement de données côté serveur, un gestionnaire d'application logicielle pourra choisir de recourir à un outil de gestion des balises s'exécutant côté serveur, à des interfaces uniques de collecte tel que segment.com ou encore paramétrer dans le langage de programmation de son choix les appels nécessaires à l'alimentation des différents outils concernés.</p>
+                    <p>Certains éditeurs de logiciels peuvent fournir des kits prêts à l'emploi, à même de permettre à leurs utilisateurs de recourir à leur API aisément. Cependant, lorsque le volume de solutions déployé côté serveur ne peut plus se compter sur les doigts d'une main, le recours aux outils de gestion des balises ou aux interfaces uniques de collecte devient indispensable afin de diminuer les coûts d'implémentation.</p>
+                    <p>Le volume d'outils compatibles avec cette méthode de suivi ne cesse de progresser, d'année en année, sans qu'elle puisse pour autant être qualifiée de fonctionnalité incontournable. En outre, certains systèmes peuvent ne pas s'avérer compatibles avec une telle méthode de suivi, bien qu'une API de collecte soit proposée à leur utilisateurs, notamment ceux nécessitant qu'un identifiant soit généré côté client afin de suivre les actions d'un utilisateur sur différents dispositifs. Par ailleurs, certains éditeurs de logiciels ne proposant pas d'API publique pour leurs service, la mise en place d'un suivi côté serveur s’avérera impossible afin d'alimenter leurs systèmes.</p>
+                    <p>Il est important de garder à l'esprit que même en cas de recours à un système de gestion des balises, un suivi côté serveur sera inévitablement synonyme d'une sollicitation accrue des département techniques afin d'installer et de maintenir les systèmes de mesure concernés. Sans oublier que le paramétrage de la plupart des outils nécessitera un niveau de connaissance technique, des utilisateurs finaux, plus poussé.</p>
+                    <p>Par ailleurs, les cycles de paramétrages liés à l'ajout ou à la modification d'une solution, dans le dispositif de suivi côté serveur, sont généralement plus longs que ceux constatés pour des outils s'exécutant côté client. Enfin, le maintien de tels systèmes est nécessairement plus onéreux car les coûts de licence liés sont plus importants. En cas d'hébergement en propre des programmes nécessaires, c'est un système de collecte à part entière qu'il s'avérera nécessaire de paramétrer, gérer, sécuriser et mettre à jour.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>A même de palier à certaines des limites des outils de suivi s'exécutant côté client, leurs pendants s'exécutant côté serveur ne peuvent prétendre au titre de réelle alternative du fait d'une compatibilité partielle des éditeurs de logiciels, mais aussi de coûts et de délais de paramétrage en moyenne significativement plus élevés. De ce fait, l'ajout de systèmes de collecte de données côté serveur devra se limiter à compléter des systèmes existant côté client, sur des indicateurs stratégiques ou sur des processus de collecte de données impactant trop fortement l'expérience utilisateur.</p>                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
