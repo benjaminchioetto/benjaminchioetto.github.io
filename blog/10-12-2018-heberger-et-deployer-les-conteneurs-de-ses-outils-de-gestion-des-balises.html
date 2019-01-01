@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pour quelles solutions opter ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+
+    <title>Héberger et déployer les conteneurs de ses outils de gestion des balises - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#defis">Défis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#problemes">Problèmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#offre">Offre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#temoignages">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#apropos">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Héberger et déployer les conteneurs de ses outils de gestion des balises</h1>
+                        <h2 class="subheading">Pour quelles solutions opter ?</h2>
+                        <span class="meta">10 décembre 2018</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Les conteneurs constituent la matrice, l'élément de base incontournable des outils de gestion des balises. D'un point de vue technique, dans sa version Web, chaque conteneur correspond à un fichier JavaScript. Lors de la génération d'une nouvelle version d'un conteneur, une variante de ce document est créée par le système de l'outil de gestion des balises, avant que le conteneur ne soit testé, préalablement à son déploiement. Il existe différentes solutions de déploiement qui nécessitent toutes, pour être fonctionnelles, qu'un système d'hébergement du fichier JavaScript du conteneur ait été mis en place. Les méthodes d'hébergement et de déploiement disponibles varient d'un outil à l'autre et présentent chacune des avantages et inconvénients. Dès lors, lesquelles utiliser ?</blockquote>
+
+                    <h2 class="section-heading">Faut-il internaliser ou externaliser l'hébergement du conteneur ?</h2>
+
+                    <p>La question de l'hébergement du conteneur est l'une des premières à adresser lors de l'installation d'un outil de gestion des balises. En effet, certaines méthodes de déploiement s'avèrent inutilisables si l'hébergement du conteneur n'est pas géré directement par l'éditeur du logiciel de gestion des balises. Les versions générées d'un conteneur, qui sont prévisualisées au moyen d'une extension pour navigateur, ou d'une demande émise sur un navigateur au sein de l'interface Web de l'outil de gestion des balises, sont stockées sur le domaine même où est localisée l'interface de gestion. Il n'est pas possible de modifier le système d'hébergement employé pour les stocker. Contrairement aux versions générées mais non déployées, il est possible, sur certains outils de gestion des balises, de décider où doit être hébergée la version déployée du conteneur.</p>
+
+                    <p>Les options disponibles varient fortement d'un outil à l'autre. Sur Google Tag Manager, par exemple, il n'est pas possible de modifier les modalités d'hébergement du fichier JavaScript du conteneur, qui sera systématiquement hébergé par Google, sur l'un de ses domaines. Sur Matomo tag manager, les conteneurs créés sont nécessairement hébergés sur le nom de domaine où s'exécute l'instance Matomo. Sur Tag Commander, les conteneurs peuvent être déployés sur n'importe quel (S)FTP, sur des réseaux CDN tels qu'Akamai ou Amazon S3, ou encore directement sur le réseau CDN de Commanders Act.</p>
+                    <p>Les méthodes d'hébergement de type CDN gérées directement par l'éditeur du logiciel de gestion des balises, comme celles proposées par Commanders Act et Google ont pour avantage de garantir un niveau de disponibilité de 99.9% des conteneurs. Par ailleurs, grâce aux dizaines de centres de données répartis dans le monde et au système de cache associé, les temps de téléchargement des conteneurs sont réduits au strict minimum. En outre, aucune action de paramétrage de l'espace d'hébergement n'est requise.</p>
+
+                    <p>Le principal inconvénient de cette méthode réside dans l'impossibilité de modifier le nom de domaine où sont hébergés les conteneurs, qui ne correspondra jamais à celui visité par l'utilisateur. Cela a pour conséquence de rendre les conteneurs vulnérables à certains outils de blocage des traceurs. Néanmoins, puisque les outils en question en viendront également à bloquer les ressources déployées directement par le conteneur, l'impact demeure au final circonscrit aux seuls codes ne répondant pas à un objectif marketing ou commercial, déployés par le conteneur. Dernier point à prendre en considération : le coût potentiel d'une telle option d'hébergement, lorsqu'elle n'est pas incluse dans l'abonnement de base à l'outil de gestion des balises.</p>
+                    
+                    <p>L'hébergement du conteneur sur un réseau CDN, pour lequel un contrat a directement été souscrit par l'entité utilisatrice de l'outil de gestion des balises auprès dudit réseau CDN, permet de bénéficier de l'ensemble des avantages évoqués ci-dessus, sans l'inconvénient que représente l'impossibilité de personnaliser le nom de domaine utilisé pour héberger le fichier. Il faut toutefois veiller, avant toute souscription, à ce que le réseau CDN soit bien compatible avec l'outil de gestion des balises utilisé. Par ailleurs, une offre d'abonnement souscrite en propre, auprès d'un réseau CDN à la seule fin d'héberger des conteneurs, sera systématiquement moins compétitive, d'un point de vue tarifaire, en comparaison de celle proposée par l'éditeur de l'outil de gestion des balises. Enfin, il faudra veiller à comparer la localisation des centres de données et le nombre de sous-traitants auxquels feront appel les entités commercialisant chacune des offres. En effet, une offre multi-CDN plus coûteuse, sera toujours préférable à une offre mono-CDN plus abordable, car elle offrira une sécurité en terme de disponibilité des conteneurs incomparable.</p>
+
+                    <p>Enfin, la méthode d'hébergement en propre, sur (S)FTP, est de loin la moins onéreuse. Elle permet d'héberger son conteneur sur le même domaine que le site visité par l'utilisateur, le rendant par là même difficile à bloquer. En outre, il est possible de réutiliser un espace d'hébergement préalablement configuré afin de stocker les ressources CSS/JavaScript/images indispensables au bon fonctionnement du site. Attention toutefois à ne pas y recourir si le centre d'hébergement utilisé pour fournir aux visiteurs le fichier JavaScript s'avère trop éloigné de l'endroit depuis lequel se connectent les visiteurs. Si tel devait être le cas, les temps de téléchargement du conteneur s'en trouveraient fortement allongés. Par ailleurs, la purge du cache, en cas de déploiement du conteneur, peut s'avérer complexe à gérer et affecter les autres ressources stockées sur le même espace d'hébergement. Dans les faits, cette option pourrait présenter, en cas de publication fréquente de nouvelles versions d'un conteneur, davantage d'inconvénients que d'avantages.</p>
+                    
+                    <p>Sélectionner l'une de ces méthodes d'hébergement sans s'interroger sur la méthode de déploiement qui sera utilisée conjointement, est fortement déconseillé, car il existe entre certaines d'entre-elles des incompatibilités pures et simples.</p>
+                    
+                    <h2 class="section-heading">Déploiement instantané, ou différé ?</h2>
+
+                    <p>Les méthodes de déploiement d'un conteneur, peu importe l'outil de gestion des balises concerné, peuvent être regroupées en deux grandes familles : les méthodes de déploiement instantanées et celles différées.</p>
+                    
+                    <p>Les méthodes de déploiement instantanées sont les plus couramment employées, car elles font écho aux besoins de raccourcissement des cycles de déploiement, qui constituent l'un des facteurs explicatifs principaux du recours à un outil de gestion des balises. Concrètement, une fois la demande de déploiement émise depuis l'interface de l'outil de gestion des balises, la version dont la mise en ligne aura été demandée sera immédiatement mise à disposition des visiteurs.</p>
+
+                    <p>Cette notion d'immédiateté est à relativiser dans le cas du recours à un réseau CDN, la purge des caches de chacun des centres de données le constituant pouvant prendre plusieurs minutes. Des restrictions similaires peuvent s'appliquer, lorsque les conteneurs sont hébergés sur un (S)FTP pour lequel un cache serveur empêche l'actualisation immédiate du fichier JavaScript du conteneur. Dans ce dernier cas de figure, une option de déploiement immédiate, s'avère dans les faits, différée. Google Tag Manager et Matomo tag manager proposent exclusivement d'effectuer des déploiements immédiats, contrairement à Tag Commander. Il peut s'avérer dangereux de permettre à des utilisateurs de déployer en un clic des modifications apportées aux conteneurs. De ce fait, la restriction de l'usage de telles méthodes de déploiement à un volume limité d'utilisateur est la norme.</p>
+                    
+                    <p>Les méthodes de déploiement différées présentent l'avantage de permettre de corriger une éventuelle erreur qui découlerait d'une demande de publication qui aurait été émise de façon trop précipitée. Dans sa forme la plus extrême, le déploiement différé prend la forme du téléchargement du fichier JavaScript du conteneur qui sera déposé manuellement sur le réseau CDN ou le (S)FTP le moment venu. Alternativement, une méthode de déploiement dite par batch, pourra être utilisée. Avec cette méthode, la récupération de la version publiée d'un conteneur s'effectue à intervalles réguliers, sur des créneaux préalablement définis.<p>
+
+                    <p>Méthode alternative au déploiement par batch, celle reposant sur l'appel à une url externe. L'url en question retourne systématiquement la version déployée du conteneur et permet donc de paramétrer un système de déploiement à mi-chemin entre le batch et le déploiement instantané sur (S)FTP. Bien que plus complexe à mettre en oeuvre, ce paramétrage a l'avantage de permet aux équipes techniques de garder un droit de regard sur le processus de publication, tout en laissant aux utilisateurs finaux une certaine agilité.</p>
+
+                    <h2 class="section-heading">En conclusion</h2>
+                    <p>Les impacts directs et indirects découlant de l'utilisation de la méthode d'hébergement des conteneurs retenue, ainsi que de la méthode de déploiement associée, sont significatifs. La sélection des bonnes méthode, en amont de la phase d'intégration initiale, est une problématique incontournable, quant à sa prise en compte, lors de la phase de sélection de l'outil, elle est fortement recommandée.</p>                                        
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2018</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
