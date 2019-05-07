@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!--
+    The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+    -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Une nouvelle fonctionnalité gadget ?">
+    <meta name="author" content="Benjamin CHIOETTO">
+    <link rel="canonical" href="https://www.blogdigital.fr/donnees-personnelles-identifiables/" />
+
+    <title>Zoom sur le "groupe de déclencheurs" de Google tag manager - Benjamin CHIOETTO</title>
+
+    <!-- Icon link -->
+    <link rel="icon" type="image/png" href="../img/favicon.ico" sizes="16x16" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PD53PLC');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../#home">B.CHIOETTO conseil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#offre">Offre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#temoignages">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#apropos">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <h1>Zoom sur le "groupe de déclencheurs" de Google tag manager</h1>
+                        <h2 class="subheading">Une nouvelle fonctionnalité gadget ?</h2>
+                        <span class="meta">12 mai 2019</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <blockquote class="blockquote">Le 26 mars 2019, un membre de l'équipe de développement de Google tag manager annonçait la mise à disposition d'une <a target="_blank" href="https://twitter.com/sanbeiji/status/1110633493229264896">nouvelle fonctionnalité</a> : les "groupes de déclencheurs". Ce nouveau type de règle, permettant l'exécution d'un tag, venait ainsi rejoindre la longue liste de ses prédécesseurs : chargement d'une page, clic sur un élément, envoi de formulaire, profondeur de défilement, affichage d'un élément, interaction avec un lecteur Youtube, détection d'une erreur JavaScript, réception d'un événement personnalisé, usage de l'API history du navigateur et enfin le minuteur. Ouf ! La perspective de pouvoir regrouper plusieurs déclencheurs, au vue de la longue liste de types de règles existantes, constitue une promesse bien séduisante. Cette première impression perdure-elle à l'issue d'une analyse détaillée ?</blockquote>
+
+                    <h2 class="section-heading">Principe de fonctionnement du "groupe de déclencheurs"</h2>
+                    
+                    <p>Le fonctionnement détaillé d'un "groupe de déclencheur" est exposé sur l'<a target="_blank" href="https://support.google.com/tagmanager/answer/9164222?hl=en">aide en ligne</a> de Google tag manager.</p>
+
+                    <p>En résumé, il s'agit d'un nouveau type de déclencheur, qui permet de regrouper en son sein plusieurs déclencheurs existants, y compris d'autres groupes de déclencheurs. Lorsque l'ensemble des règles se trouvant au sein d'un "groupe de déclencheurs", ont été évaluées comme étant justes au minimum une fois, le groupe de déclencheurs est à son tour évalué comme valide. Le ou les tags liés au "groupe de déclencheurs" s'exécute alors.</p>
+
+                    <p>A noter : si une même règle est spécifiée N fois dans un "groupe de déclencheurs", il faudra qu'elle ait été évaluée comme juste à minima N fois, pour que le "groupe de déclencheurs" soit jugé valide.</p>
+
+                    <h2 class="section-heading">Pourquoi ajouter un énième type de déclencheur ?</h2>
+
+                    <p>Le "groupe de déclencheurs" permet donc de créer des règles de déclenchement cumulatives complexes, y compris sur des types de déclencheurs différents, ce qui était impossible jusqu'à présent de façon simple.</p>
+
+                    <p>En effet, auparavant, la seule manière d'y parvenir était d'utiliser une variable couplée à un tag et deux règles de déclenchement. La logique était la suivante : lors du chargement d'une page, une variable X est définie avec une valeur par défaut "faux". Lorsque l'utilisateur accomplit la première action devant être réalisée, par exemple le défilement de la page à 50% de sa profondeur, le tag auquel est lié la règle de déclenchement "Scroll à 50%" met à jour la variable X et la fait passer à "vrai".</p>
+
+                    <P>Dès lors, lorsque l'utilisateur en vient à réaliser une seconde interaction, mettons le clic sur un bouton d'appel à l'action, il est possible d'inclure une condition au sein de la règle de type clic ciblant le bouton en question, afin qu'elle soit jugée comme valide uniquement si la variable X est égale à "vrai".</p>
+
+                    <p>Jusqu'au 26 mars dernier, il était donc nécessaire de "tordre" Google tag manager et d'avoir un très bon niveau de connaissance du fonctionnement de cet outil, afin de paramétrer des règles de déclenchement reposant sur des conditions cumulatives. Désormais, une règle de type "groupe de déclencheurs" faisant référence à deux déclencheurs, permet de répondre au cas d'usage exposé précédemment.</p>
+
+                    <p>Si la simplification de l'outil est indiscutable, y-a-t-il pour autant matière à se réjouir ?</p>
+
+                    <h2 class="section-heading">Ajouter un nouveau type de déclencheur : un choix discutable</h2>
+
+                    <p>En effet, l'usage du "groupe de déclencheurs" risque fort de se cantonner aux seuls utilisateurs maîtrisant déjà les diverses règles de déclenchement, mettant ainsi à la portée des utilisateurs intermédiaires des paramétrages qu'ils n'étaient pas en capacité de réaliser jusqu'à présent. Pour autant, les utilisateurs les moins avancés ne parviendront pas à coup sûr à comprendre l'intérêt de cette nouvelle fonctionnalité.</p>
+
+                    <p>Lorsque des utilisateurs découvrent Google tag manager, ou sont amenés à l'utiliser peu fréquemment, ils sont le plus souvent effrayés par le volume de déclencheurs disponibles et ne comprennent pas toujours le sens de certains d'entre-eux, à la lecture de leur libellé. Il y a fort à parier que le terme "groupe de déclencheurs" renvoie pour eux davantage à la possibilité de cumuler plusieurs conditions au sein d'un même déclencheur, qu'à en cumuler plusieurs.</p>
+
+                    <p>En ajoutant ce nouveau composant au sein de Google tag manager, Google continue à enrichir son outil de fonctionnalités intéressantes, exploitables par des utilisateurs intermédiaires/avancés, mais dont l'urgence ou la criticité du développement peinent à convaincre. Pourquoi ne pas avoir travaillé en priorité à résoudre un problème épineux auquel se trouve confronté tout utilisateur de l'outil : l'impossibilité au sein d'un même déclencheur de spécifier plusieurs conditions de déclenchement au moyen de l'opérateur logique OU et non uniquement au moyen de l'opérateur logique ET ?</p>
+
+                    <p>Cet état de fait rend l'outil plus difficile à maîtriser et force l'utilisateur à créer plusieurs règles, afin de répondre à des besoins d'implémentations basiques. En résulte une inflation du nombre de règles, des difficultés de compréhension du fonctionnement des conteneurs et par extension un accroissement de la complexité de leur paramétrage et donc des coûts liés.</p>                      
+
+                    <h2 class="section-heading">En conclusion</h2>
+
+                    <p>A l'image de multiples éditeurs de logiciel, Google a fait le choix avec Google tag manager de ne pas rendre sa feuille de route produit publique, ni de proposer à ses utilisateurs un espace central récapitulant les propositions de nouvelles fonctionnalités avancées qu'ils pourraient lui soumettre. Conséquence de ce manque de transparence, de nouvelles fonctionnalités sont ajoutées au produit sans qu'une réponse viable ait été préalablement apportée à des besoins basiques des utilisateurs. Si le "groupe de déclencheurs" ne saurait être qualifié de gadget, car il répond à un véritable besoin en terme de paramétrage, il démontre de façon éclatante l'un des inconvénients découlant du recours à un outil dans sa version gratuite, dont les orientations en terme de développement ne sont pas directement fixées par la masse de ses utilisateurs : des développements de fonctionnalités priorisés de façon discutable.</p>                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; Benjamin CHIOETTO - 2019</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
